@@ -136,8 +136,8 @@ if ( ! exists('domainsets')) {
 
 all_classes = get_classes(c(names(high_count_terms),names(low_count_terms[low_count_terms >= 2])))
 
-#overlaps = overlapping_domains(all_classes[is.na(all_classes$Class),'interpro'], all_classes[! is.na(all_classes$Class),'interpro'], human.domains[human.domains$uniprot %in% all_sites.human$uniprot,])
-#overlaps$key = paste(overlaps$query,overlaps$target)
+overlaps = overlapping_domains(all_classes[is.na(all_classes$Class),'interpro'], all_classes[! is.na(all_classes$Class),'interpro'], human.domains[human.domains$uniprot %in% all_sites.human$uniprot,])
+overlaps$key = paste(overlaps$query,overlaps$target)
 overlap_counts = table(unique(overlaps)$key)
 
 overlap_mapping = unique(overlaps[ ! grepl("TMhelix",overlaps$key) & overlaps$key %in% names(overlap_counts[overlap_counts > 2]),c('query','target')])
@@ -155,6 +155,8 @@ missing_low_frequency = sort(base::table(unique(human.domains[human.domains$unip
 final_classes = expand_classes(all_classes)
 
 human.glycodomains = apply_classes(human.domains,final_classes)
+
+cytosolic = read.delim('cytosolic.txt',header=F)$V1
 
 domainsets.glycodomain = Rgator::calculateDomainSets(all_sites.human[! all_sites.human$uniprot %in% cytosolic,],'site',human.glycodomains,stem_distance=50,remove_tm_overlaps = FALSE)
 

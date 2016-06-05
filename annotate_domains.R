@@ -107,7 +107,19 @@ overlapping_domains = function(query_interpro,target_interpro,all_domains) {
   },.progress='text')
 }
 
+expand_classes = function(classes,groups) {
+  plyr::ddply(classes,'interpro',function(df) {
+    children = child_terms(df$interpro[1],all_groups,10)
+    rbind(df,expand.grid(interpro=children[!is.na(children)],Class=df$Class))
+  })
+}
 
+apply_classes = function(domains,classes) {
+  classlist = classes$Class
+  names(classlist) = classes$interpro
+  domains$dom = ifelse(domains$dom %in% names(classlist),classlist[domains$dom],domains$dom)
+  return (domains)
+}
 
 #all_groups = group_interpros(interpro_raw_relations)
 
@@ -124,15 +136,15 @@ if ( ! exists('domainsets')) {
 
 all_classes = get_classes(c(names(high_count_terms),names(low_count_terms[low_count_terms >= 2])))
 
-overlaps = overlapping_domains(all_classes[is.na(all_classes$Class),'interpro'], all_classes[! is.na(all_classes$Class),'interpro'], human.domains[human.domains$uniprot %in% all_sites.human$uniprot,])
-overlaps$key = paste(overlaps$query,overlaps$target)
+#overlaps = overlapping_domains(all_classes[is.na(all_classes$Class),'interpro'], all_classes[! is.na(all_classes$Class),'interpro'], human.domains[human.domains$uniprot %in% all_sites.human$uniprot,])
+#overlaps$key = paste(overlaps$query,overlaps$target)
 overlap_counts = table(unique(overlaps)$key)
 
 overlap_mapping = unique(overlaps[ ! grepl("TMhelix",overlaps$key) & overlaps$key %in% names(overlap_counts[overlap_counts > 2]),c('query','target')])
 
 overlap_classes = setNames(merge(overlap_mapping,all_classes,by.x='target',by.y='interpro')[,c('query','Class')],c('interpro','Class'))
 
-all_classes = rbind(all_classes,overlap_classes)
+all_classes = rbind(all_classes[! is.na(all_classes$Class),],overlap_classes)
 
 missing_doms = unique(c( domainsets$inside[! domainsets$inside$dom %in% all_classes$interpro,]$dom, domainsets$between[! domainsets$between$dom %in% all_classes$interpro,]$dom))
 
@@ -140,4 +152,7 @@ missing_doms = missing_doms[ ! missing_doms %in% unlist(sapply(names(high_count_
 
 missing_low_frequency = sort(base::table(unique(human.domains[human.domains$uniprot %in% all_sites.human$uniprot & human.domains$dom %in% missing_doms,c('uniprot','dom')])$dom))
 
+final_classes = expand_classes(all_classes)
+
+human.glycodomains = apply_classes(human.domains,final_classes)
 

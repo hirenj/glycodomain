@@ -156,3 +156,6 @@ final_classes = expand_classes(all_classes)
 
 human.glycodomains = apply_classes(human.domains,final_classes)
 
+domainsets.glycodomain = Rgator::calculateDomainSets(all_sites.human[! all_sites.human$uniprot %in% cytosolic,],'site',human.glycodomains,stem_distance=50,remove_tm_overlaps = FALSE)
+
+sort(table(unique(domainsets.glycodomain$inside[,c('uniprot','dom')])$dom))

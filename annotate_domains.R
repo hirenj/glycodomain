@@ -122,9 +122,22 @@ if ( ! exists('domainsets')) {
 
 #low_count_terms = child_summed_counts[child_summed_counts < 10 & ! names(child_summed_counts) %in% unlist(sapply(names(high_count_terms),function(x) child_terms(x,all_groups,10))) ]
 
-all_classes = get_classes(c(names(high_count_terms),names(low_count_terms[low_count_terms <= 2])))
+all_classes = get_classes(c(names(high_count_terms),names(low_count_terms[low_count_terms >= 2])))
 
 overlaps = overlapping_domains(all_classes[is.na(all_classes$Class),'interpro'], all_classes[! is.na(all_classes$Class),'interpro'], human.domains[human.domains$uniprot %in% all_sites.human$uniprot,])
+overlaps$key = paste(overlaps$query,overlaps$target)
 overlap_counts = table(unique(overlaps)$key)
 
 overlap_mapping = unique(overlaps[ ! grepl("TMhelix",overlaps$key) & overlaps$key %in% names(overlap_counts[overlap_counts > 2]),c('query','target')])
+
+overlap_classes = setNames(merge(overlap_mapping,all_classes,by.x='target',by.y='interpro')[,c('query','Class')],c('interpro','Class'))
+
+all_classes = rbind(all_classes,overlap_classes)
+
+missing_doms = unique(c( domainsets$inside[! domainsets$inside$dom %in% all_classes$interpro,]$dom, domainsets$between[! domainsets$between$dom %in% all_classes$interpro,]$dom))
+
+missing_doms = missing_doms[ ! missing_doms %in% unlist(sapply(names(high_count_terms),function(x) child_terms(x,all_groups,10))) ]
+
+missing_low_frequency = sort(base::table(unique(human.domains[human.domains$uniprot %in% all_sites.human$uniprot & human.domains$dom %in% missing_doms,c('uniprot','dom')])$dom))
+
+

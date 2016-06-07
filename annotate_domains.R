@@ -42,15 +42,15 @@ if ( ! exists('all_sites.human')) {
   all_sites.human = all_sites[all_sites$uniprot %in% tolower(Rgator::getUniprotIds(9606)),]
 }
 
-if ( is.null(get('transmembrane.uniprot.9606')) ) {
-  Rgator:::downloadTransmembrane(9606)
+if ( is.null(get('human.domains')) ) {
+  if ( is.null(get('transmembrane.uniprot.9606')) ) {
+    Rgator:::downloadTransmembrane(9606)
+  }
+  if ( is.null(get('interpro.9606')) ) {
+    Rgator::downloadInterproDomains(9606)
+  }
+  human.domains = rbind( interpro.9606.annotated[interpro.9606.annotated$class == 'Domain',c('uniprot','dom','start','end')], transmembrane.uniprot.9606 )
 }
-if ( is.null(get('interpro.9606')) ) {
-  Rgator::downloadInterproDomains(9606)
-}
-
-human.domains = rbind( interpro.9606.annotated[interpro.9606.annotated$class == 'Domain',c('uniprot','dom','start','end')], transmembrane.uniprot.9606 )
-
 
 get_classes = function(interpro) {
   go_mapped = merge(interpro_raw_go[interpro_raw_go$interpro %in% interpro,], go_manual_mappings,by='go')[,c('interpro','Class')]

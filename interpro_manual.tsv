@@ -43,12 +43,12 @@ IPR020858	NA	Albumin	GO_mapping
 IPR022416	NA	Prion	GO_mapping
 IPR000001		Unknown / Kringle	High count
 IPR002477		Binding / Peptidoglycan	High count
-IPR002919		Inhibitor / Cleavage	High count
+IPR002919		Inhibit / Cleavage	High count
 IPR008972		Cupredoxin	High count
 IPR013980		Binding / Protein	High count
 IPR016040		Binding / NADP	High count
 IPR018490		Binding / CAMP	High count
-IPR018933		Inhibitor / Cleavage	High count
+IPR018933		Inhibit / Cleavage	High count
 IPR019748		Targeting	High count
 IPR022409		IG like	High count
 IPR000421		Binding / Sugar	High count
@@ -70,26 +70,27 @@ IPR011047		Alcohol dehyd.	High count
 IPR013151		IG	High count
 IPR014001		Binding / DNA	High count
 IPR014710		Isomerase / Sugar	High count
-IPR000716		Unknown,Inhibitor/Cleavage	High count
+IPR000716		Inhibit / Cleavage	High count
 IPR001870		Binding / Protein	High count
 IPR026823		EGF	High count
 IPR000859		Dimerisation, Binding	High count
 IPR001304		Binding / Sugar	High count
 IPR014352		Targeting	High count
 IPR023214		Hydrolase	High count
-IPR011042		Interaction / Protein	High count
+IPR011042		Binding / Protein	High count
 IPR003593		Binding / ATP	High count
-IPR011029		Interaction / Protein	High count
+IPR011029		Binding / Protein	High count
 IPR028889		Deubiquitinase	High count
 IPR029058		Hydrolase	High count
 IPR011991		Binding / DNA	High count
-IPR020683		Interaction / Protein	High count
+IPR020683		Binding / Protein	High count
 IPR003597		IG	High count
 IPR013761		Binding	High count
 IPR000436		Recognition	High count
 IPR014756		IG	High count
-IPR000372		Interaction / Protein	High count
-IPR000483		Interaction / Protein	High count
+IPR000372		Binding / Protein	High count
+IPR000483		Unknown	High count
+IPR031635		Binding / Protein	High count
 IPR002290		Kinase	High count
 IPR017853		Hydrolase / Sugar	High count
 IPR011989		Binding	High count
@@ -99,11 +100,13 @@ IPR009003		Cleavage	High count
 IPR012336		Oxidoreductase	High count
 IPR013806		Unknown / Kringle	High count
 IPR001791		Binding	High count
-IPR002035		Interaction / Protein	High count
-IPR008993		Binding, Inhibitor / Cleavage	High count
+IPR002035		Adhesion / Metal-dependent	High count
+IPR008993		Binding	High count
+IPR001134		Inhibit / Cleavage	High count
+IPR004850		Binding / Protein	High count
 IPR013106		IG	High count
 IPR008979		Binding / Sugar	High count
-IPR011333		Interaction / Protein	High count
+IPR011333		Binding / Protein	High count
 IPR029021		Phosphatase	High count
 IPR016186		Binding / Sugar	High count
 IPR011162		MHC	High count
@@ -127,10 +130,10 @@ IPR000089		Binding	Low count
 IPR000409		Unknown	Low count
 IPR029063		Other	Low count
 IPR000014		Other	Low count
-IPR001762		Inhibitor / Cleavage	Low count
+IPR001762		Inhibit / Cleavage	Low count
 IPR008916		Other	Low count
 IPR013649		Other	Low count
-IPR013694		Inhibitor / Cleavage	Low count
+IPR013694		Inhibit / Cleavage	Low count
 IPR016181		Other	Low count
 IPR017878		Binding	Low count
 IPR020568		Other	Low count
@@ -144,7 +147,7 @@ IPR014853		Unknown	Low count
 IPR016197		Other	Low count
 IPR028082		Binding / Protein	Low count
 IPR008211		Polymerisation	manual
-IPR023796		Inhibitor / Cleavage	manual
+IPR023796		Inhibit / Cleavage	manual
 IPR016054		Unknown	manual
 IPR011625		Unknown	manual
 IPR015369		Binding / Protein	frequent_missing
@@ -186,7 +189,7 @@ IPR007123		Binding	frequent_missing
 IPR007484		Cleavage	frequent_missing
 IPR009020		Cleavage / Activation	frequent_missing
 IPR011658		Binding / Sugar	frequent_missing
-IPR012919		Interaction / Protein	frequent_missing
+IPR012919		Skipped?	frequent_missing
 IPR021613		Adhesion / ECM, Self-cleavage	frequent_missing
 IPR022049		Kinase	frequent_missing
 IPR022385		Unknown	frequent_missing
@@ -232,6 +235,38 @@ IPR001879		Unknown	go_review
 IPR011500		Structure / Disulphide	go_review
 IPR001879		Skipped	go_review
 IPR017978		Skipped go_review
+IPR030398		Cleavage	frequent_missing
+IPR008139		Multiple / Cleaved	frequent_missing
+IPR008138		Multiple / Cleaved	frequent_missing
+IPR007856		Multiple / Cleaved	frequent_missing
+IPR009066		Binding / Ligand	frequent_missing
+IPR021996		Polymerisation	frequent_missing
+IPR003119		Targeting	frequent_missing
+IPR001156		Binding / Iron	frequent_missing
+IPR015129		Binding / Protein	frequent_missing
+IPR011988		Polymerisation	frequent_missing
+IPR010363		Unknown	frequent_missing
+IPR013803		Cleaved	frequent_missing
+IPR027468		Unknown	frequent_missing
+IPR011040		Unknown	frequent_missing
+IPR000118		Unknown	frequent_missing
+IPR011050		Unknown	frequent_missing
+IPR021520		Unknown	frequent_missing
+IPR010506		Binding / Protein	frequent_missing
+IPR013576		Factor	frequent_missing
+IPR004443		Unknown	frequent_missing
+IPR016015		Unknown	frequent_missing
+IPR016014		Unknown	frequent_missing
+IPR028146		Stability / Targetting	frequent_missing
+IPR022176		Unknown	frequent_missing
+IPR010895		IG-like	frequent_missing
+IPR003812		Transferase / AMP	frequent_missing
+IPR003993		Skipped	frequent_missing
+IPR012989		Skipped	frequent_missing
+IPR016071		Skipped	frequent_missing
+IPR001064		Skipped	frequent_missing
+IPR003334		Skipped	frequent_missing
+IPR015360		Skipped	frequent_missing
 IPR028942		Skipped	frequent_missing
 IPR027484		Skipped	frequent_missing
 IPR027483		Skipped	frequent_missing

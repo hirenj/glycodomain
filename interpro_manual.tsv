@@ -1,1 +1,365 @@
-interpro	GO	Class	SourceIPR000020	NA	Cleaved	GO_mappingIPR000198	NA	Receptor / G protein	GO_mappingIPR000203	NA	Cleaved / GPCR	GO_mappingIPR000299	NA	Targeting	GO_mappingIPR001039	NA	MHC	GO_mappingIPR011161	NA	MHC	GO_mappingIPR013766	NA	Thioredoxin	GO_mappingIPR013781	NA	Hydrolase / Sugar	GO_mappingIPR016024	NA	Binding	GO_mappingIPR017448	NA	Receptor / Repeat	GO_mappingIPR000083	NA	Fibronectin	GO_mappingIPR000159	NA	Signal	GO_mappingIPR000536	NA	Receptor / Binding	GO_mappingIPR000857	NA	Motor	GO_mappingIPR000998	NA	Binding / Adhesion	GO_mappingIPR001179	NA	Folding	GO_mappingIPR001401	NA	Binding / GTP	GO_mappingIPR001565	NA	Binding / Lipid	GO_mappingIPR001774	NA	Ligand / Notch	GO_mappingIPR001799	NA	Ligand	GO_mappingIPR001928	NA	Cleaved	GO_mappingIPR002641	NA	Lipid	GO_mappingIPR003886	NA	Unknown	GO_mappingIPR003987	NA	Unknown	GO_mappingIPR006796	NA	Signal	GO_mappingIPR008753	NA	Cleavage	GO_mappingIPR009038	NA	GOLD	GO_mappingIPR009048	NA	Binding / Ligand	GO_mappingIPR009083	NA	Transcription factor	GO_mappingIPR009088	NA	Transcription factor	GO_mappingIPR009471	NA	EF-Hand	GO_mappingIPR010307	NA	Adhesion	GO_mappingIPR011651	NA	Ligand / Notch	GO_mappingIPR011656	NA	Notch	GO_mappingIPR012561	NA	Unknown	GO_mappingIPR014760	NA	Albumin	GO_mappingIPR015988	NA	Transcription factor	GO_mappingIPR016093	NA	MIR	GO_mappingIPR020858	NA	Albumin	GO_mappingIPR022416	NA	Prion	GO_mappingIPR000001		Unknown / Kringle	High countIPR002477		Binding / Peptidoglycan	High countIPR002919		Inhibitor / Cleavage	High countIPR008972		Redoxin	High countIPR013980		Binding / Protein	High countIPR016040		Binding / NADP	High countIPR018490		Binding / CAMP	High countIPR018933		Inhibitor / Cleavage	High countIPR019748		Targeting	High countIPR022409		IG like	High countIPR000421		Binding / Sugar	High countIPR000585		Binding	High countIPR001846		Binding	High countIPR002181		Binding	High countIPR011511		Binding / Protein	High countIPR015940		Binding / Protein	High countIPR019749		Targeting	High countIPR001173		Transferase / Sugar	High countIPR001650		Unknown	High countIPR000772		Binding / Sugar	High countIPR000980		Binding / Phosphoprotein	High countIPR002049		Binding, EGF	High countIPR006207		Factor	High countIPR008930		Transferase	High countIPR009017		Binding / Protein	High countIPR011047		Alcohol dehyd.	High countIPR013151		IG	High countIPR014001		Binding / DNA	High countIPR014710		Isomerase	High countIPR000716		Unknown,Inhibitor/Cleavage	High countIPR001870		Binding / Protein	High countIPR026823		EGF	High countIPR000859		Dimerisation, Binding	High countIPR001304		Binding / Sugar	High countIPR014352		Targeting	High countIPR023214		Hydrolase	High countIPR011042		Interaction / Protein	High countIPR003593		Binding / ATP	High countIPR011029		Interaction / Protein	High countIPR028889		Deubiquitinase	High countIPR029058		Hydrolase	High countIPR011991		Binding / DNA	High countIPR020683		Interaction / Protein	High countIPR003597		IG	High countIPR013761		Interaction	High countIPR000436		Recognition	High countIPR014756		IG	High countIPR000372		Interaction / Protein	High countIPR000483		Interaction / Protein	High countIPR002290		Kinase	High countIPR017853		Hydrolase / Sugar	High countIPR011989		Binding	High countIPR029034		Factor	High countIPR001849		Targeting / Binding	High countIPR009003		Cleavage	High countIPR012336		Thioredoxin	High countIPR013806		Unknown / Kringle	High countIPR001791		Binding	High countIPR002035		Interaction / Protein	High countIPR008993		Binding, Inhibitor / Cleavage	High countIPR013106		IG	High countIPR008979		Binding / Sugar	High countIPR011333		Interaction / Protein	High countIPR029021		Phosphatase	High countIPR016186		Binding / Sugar	High countIPR011162		MHC	High countIPR029071		Unknown	High countIPR029044		Transferase / Sugar	High countIPR003598		IG	High countIPR013098		IG	High countIPR011011		Binding	High countIPR011992		Binding / Calcium	High countIPR009030		Receptor	High countIPR016187		Binding / Sugar	High countIPR003599		IG	High countIPR011993		Binding / Lipid, Targeting	High countIPR013320		Binding / Sugar	High countIPR011009		Kinase	High countIPR013083		Binding	High countIPR027417		Binding / NTP	High countIPR015880		Binding	High countIPR013783		IG like	High countIPR000089		Binding	Low countIPR000409		Unknown	Low countIPR029063		Other	Low countIPR000014		Other	Low countIPR001762		Inhibitor / Cleavage	Low countIPR008916		Other	Low countIPR013649		Other	Low countIPR013694		Inhibitor / Cleavage	Low countIPR016181		Other	Low countIPR017878		Binding	Low countIPR020568		Other	Low countIPR003616		Other	Low countIPR009079		cytokine, factor	Low countIPR013162		IG	Low countIPR029787		Signal	Low countIPR003594		Binding / ATP	Low countIPR014716		Binding	Low countIPR014853		Unknown	Low countIPR016197		Other	Low countIPR028082		Receptor / Binding	Low countIPR008211		Polymerisation	manualIPR023796		Inhibitor / Cleavage	manualIPR016054		Unknown	manualIPR011625		Unknown	manualIPR015369		Binding / Protein	frequent_missingIPR004839		Binding	frequent_missingIPR013768		Binding	frequent_missingIPR010660		Unknown	frequent_missingIPR005533		Adhesion	frequent_missingIPR003605		Activation	frequent_missingIPR000082		Unknown	frequent_missingIPR000566		Binding	frequent_missingIPR011038		Binding	frequent_missingIPR001199		Binding	frequent_missingIPR001623		Interaction / ATPase	frequent_missingIPR002861		Unknown	frequent_missingIPR003112		Unknown	frequent_missingIPR003410		IG	frequent_missingIPR004043		Binding / Sugar	frequent_missingIPR004133		Antagonist	frequent_missingIPR008280		Skipped	frequent_missingIPR009011		Binding / Man6p	frequent_missingIPR010536		Unknown	frequent_missingIPR009496		Unknown	frequent_missingIPR011001		Binding,Oligomerisation,conf change	frequent_missingIPR014044		Ca++chelating	frequent_missingIPR019466		Trimerisation	frequent_missingIPR019479		Membrane oxidation	frequent_missingIPR021852		Unknown	frequent_missingIPR024329		Dimerisation	frequent_missingIPR000034		Unknown	frequent_missingIPR025155		Unknown	frequent_missingIPR001148		Carbon hydration	frequent_missingIPR001507		Polymerisation	frequent_missingIPR002893		Binding / Protein	frequent_missingIPR003137		Recognition / Structure	frequent_missingIPR003609		Binding	frequent_missingIPR003644		Binding / Calcium	frequent_missingIPR005018		Adhesion	frequent_missingIPR007123		Binding	frequent_missingIPR007484		Cleavage	frequent_missingIPR009020		Cleavage / Activation	frequent_missingIPR011658		Binding / Sugar	frequent_missingIPR012919		Interaction / Protein	frequent_missingIPR021613		Adhesion / ECM, Self-cleavage	frequent_missingIPR022049		Kinase	frequent_missingIPR022385		Unknown	frequent_missingIPR021816		Unknown	frequent_missingIPR024571		Unknown	frequent_missingIPR025232		Unknown	frequent_missingIPR026966		Unknown	frequent_missingIPR028916		Unknown	frequent_missingIPR029006		Binding	frequent_missingIPR029403		Unknown	frequent_missingIPR006581		Unknown / Receptor	frequent_missingIPR009581		Kinase	frequent_missingIPR011705		Substrate orientation	frequent_missingIPR016017		Unknown, factor	frequent_missingIPR018392		Binding / Peptidoglycan	frequent_missingIPR021109		Cleavage	frequent_missingIPR029047		Binding / Protein	frequent_missingIPR029048		Stabilisation	frequent_missingIPR000494		Receptor	frequent_missingIPR000519		Unknown	frequent_missingIPR000782		Adhesion	frequent_missingIPR000800		Receptor	frequent_missingIPR001526		Receptor	frequent_missingIPR016054		Receptor	frequent_missingIPR003988		IG-like	frequent_missingIPR007934		Binding / Sugar	frequent_missingIPR010457		IG	frequent_missingIPR012896		Unknown	frequent_missingIPR013787		Binding / Calcium	frequent_missingIPR015152		IG,Binding / Protein	frequent_missingIPR015321		IG,Binding / Cytokine	frequent_missingIPR015373		IG	frequent_missingIPR016090		Phospholipase	frequent_missingIPR027465		Interaction / MMP	frequent_missingIPR029000		Binding / unfolded protein	frequent_missingIPR007365		Dimerisation	frequent_missingIPR027350		Transferase / Sugar	frequent_missingIPR028942		Skipped	frequent_missingIPR027484		Skipped	frequent_missingIPR027483		Skipped	frequent_missingIPR027401		Skipped	frequent_missingIPR027267		Skipped	frequent_missingIPR024743		Skipped	frequent_missingIPR024600		Skipped	frequent_missingIPR024317		Skipped	frequent_missingIPR023213		Skipped	frequent_missingIPR023123		Skipped	frequent_missingIPR022750		Skipped	frequent_missingIPR022164		Skipped	frequent_missingIPR021918		Skipped	frequent_missingIPR021818		Skipped	frequent_missingIPR020850		Skipped	frequent_missingIPR019559		Skipped	frequent_missingIPR019558		Skipped	frequent_missingIPR018501		Skipped	frequent_missingIPR018500		Skipped	frequent_missingIPR017946		Skipped	frequent_missingIPR016158		Skipped	frequent_missingIPR016035		Skipped	frequent_missingIPR015947		Skipped	frequent_missingIPR014935		Skipped	frequent_missingIPR014836		Skipped	frequent_missingIPR014811		Skipped	frequent_missingIPR014772		Skipped	frequent_missingIPR014770		Skipped	frequent_missingIPR013602		Skipped	frequent_missingIPR013594		Skipped	frequent_missingIPR012990		Skipped	frequent_missingIPR012603		Skipped	frequent_missingIPR011053		Skipped	frequent_missingIPR010579		Skipped	frequent_missingIPR010011		Skipped	frequent_missingIPR009091		Skipped	frequent_missingIPR009001		Skipped	frequent_missingIPR009000		Skipped	frequent_missingIPR008955		Skipped	frequent_missingIPR008942		Skipped	frequent_missingIPR006900		Skipped	frequent_missingIPR006896		Skipped	frequent_missingIPR006821		Skipped	frequent_missingIPR005135		Skipped	frequent_missingIPR005108		Skipped	frequent_missingIPR004328		Skipped	frequent_missingIPR004273		Skipped	frequent_missingIPR004182		Skipped	frequent_missingIPR004170		Skipped	frequent_missingIPR004161		Skipped	frequent_missingIPR004160		Skipped	frequent_missingIPR004022		Skipped	frequent_missingIPR002498		Skipped	frequent_missingIPR001711		Skipped	frequent_missingIPR000909		Skipped	frequent_missingIPR000300		Skipped	frequent_missingIPR019486		Skipped	frequent_missingIPR018459		Skipped	frequent_missingIPR014720		Skipped	frequent_missingIPR012340		Skipped	frequent_missingIPR012317		Skipped	frequent_missingIPR003347		Skipped	frequent_missingIPR002999		Skipped	frequent_missingIPR002219		Skipped	frequent_missingIPR002190		Skipped	frequent_missingIPR001251		Skipped	frequent_missingIPR000313		Skipped	frequent_missingIPR000195		Skipped	frequent_missingIPR027357		Skipped	frequent_missingIPR027007		Skipped	frequent_missingIPR026831		Skipped	frequent_missingIPR022735		Skipped	frequent_missingIPR015425		Skipped	frequent_missingIPR014847		Skipped	frequent_missingIPR014799		Skipped	frequent_missingIPR014009		Skipped	frequent_missingIPR013548		Skipped	frequent_missingIPR011033		Skipped	frequent_missingIPR010703		Skipped	frequent_missingIPR009071		Skipped	frequent_missingIPR008936		Skipped	frequent_missingIPR004012		Skipped	frequent_missingIPR003889		Skipped	frequent_missingIPR003888		Skipped	frequent_missingIPR003034		Skipped	frequent_missingIPR001936		Skipped	frequent_missingIPR001357		Skipped	frequent_missingIPR000938		Skipped	frequent_missingIPR000906		Skipped	frequent_missingIPR000198		Skipped	frequent_missingIPR000095		Skipped	frequent_missingIPR018316		Skipped	frequent_missingIPR016159		Skipped	frequent_missingIPR023780		Skipped	frequent_missingIPR023298		Skipped	frequent_missingIPR014014		Skipped	frequent_missingIPR011709		Skipped	frequent_missingIPR011539		Skipped	frequent_missingIPR029060		Skipped	frequent_missingIPR024678		Skipped	frequent_missingIPR013809		Skipped	frequent_missingIPR004367		Skipped	frequent_missingIPR003008		Skipped	frequent_missingIPR027409		Skipped	frequent_missingIPR021893		Skipped	frequent_missingIPR016185		Skipped	frequent_missingIPR016137		Skipped	frequent_missingIPR014722		Skipped	frequent_missingIPR013767		Skipped	frequent_missingIPR011417		Skipped	frequent_missingIPR010660		Skipped	frequent_missingIPR010472		Skipped	frequent_missingIPR006576		Skipped	frequent_missingIPR005533		Skipped	frequent_missingIPR004154		Skipped	frequent_missingIPR004148		Skipped	frequent_missingIPR003894		Skipped	frequent_missingIPR003891		Skipped	frequent_missingIPR003650		Skipped	frequent_missingIPR003605		Skipped	frequent_missingIPR003350		Skipped	frequent_missingIPR003165		Skipped	frequent_missingIPR003130		Skipped	frequent_missingIPR002867		Skipped	frequent_missingIPR002710		Skipped	frequent_missingIPR002589		Skipped	frequent_missingIPR001763		Skipped	frequent_missingIPR001739		Skipped	frequent_missingIPR001594		Skipped	frequent_missingIPR000756		Skipped	frequent_missingIPR000375		Skipped	frequent_missing
+interpro	GO	Class	Source
+IPR000020	NA	Cleaved	GO_mapping
+IPR000198	NA	Skipped	GO_mapping
+IPR000203	NA	Cleaved / GPCR	GO_mapping
+IPR000299	NA	Targeting	GO_mapping
+IPR001039	NA	MHC	GO_mapping
+IPR011161	NA	MHC	GO_mapping
+IPR013766	NA	Oxidoreductase	GO_mapping
+IPR013781	NA	Hydrolase / Sugar	GO_mapping
+IPR016024	NA	Binding	GO_mapping
+IPR017448	NA	Unknown	go_review
+IPR015352	NA	Binding / Protein	go_review
+IPR001190	NA	Binding / Protein	go_review
+IPR000083	NA	Fibronectin	GO_mapping
+IPR000159	NA	Signal	GO_mapping
+IPR000536	NA	Binding / Protein,Ligand	GO_mapping
+IPR000857	NA	Motor	GO_mapping
+IPR000998	NA	Binding / Adhesion	GO_mapping
+IPR001179	NA	Isomerase / unfolded protein	GO_mapping
+IPR001401	NA	Binding / GTP	GO_mapping
+IPR001565	NA	Binding / Lipid	GO_mapping
+IPR001774	NA	Ligand / Notch	GO_mapping
+IPR001799	NA	Ligand	GO_mapping
+IPR001928	NA	Cleaved	GO_mapping
+IPR002641	NA	Lipid	GO_mapping
+IPR003886	NA	Unknown	GO_mapping
+IPR003987	NA	Unknown	GO_mapping
+IPR006796	NA	Signal	GO_mapping
+IPR008753	NA	Cleavage	GO_mapping
+IPR009038	NA	GOLD	GO_mapping
+IPR009048	NA	Binding / Ligand	GO_mapping
+IPR009083	NA	Transcription factor	GO_mapping
+IPR009088	NA	Transcription factor	GO_mapping
+IPR009471	NA	EF-Hand	GO_mapping
+IPR010307	NA	Adhesion	GO_mapping
+IPR011651	NA	Ligand / Notch	GO_mapping
+IPR011656	NA	Notch	GO_mapping
+IPR012561	NA	Unknown	GO_mapping
+IPR014760	NA	Albumin	GO_mapping
+IPR015988	NA	Transcription factor	GO_mapping
+IPR016093	NA	MIR	GO_mapping
+IPR020858	NA	Albumin	GO_mapping
+IPR022416	NA	Prion	GO_mapping
+IPR000001		Unknown / Kringle	High count
+IPR002477		Binding / Peptidoglycan	High count
+IPR002919		Inhibitor / Cleavage	High count
+IPR008972		Cupredoxin	High count
+IPR013980		Binding / Protein	High count
+IPR016040		Binding / NADP	High count
+IPR018490		Binding / CAMP	High count
+IPR018933		Inhibitor / Cleavage	High count
+IPR019748		Targeting	High count
+IPR022409		IG like	High count
+IPR000421		Binding / Sugar	High count
+IPR000585		Binding	High count
+IPR001846		Binding	High count
+IPR002181		Binding	High count
+IPR011511		Binding / Protein	High count
+IPR015940		Binding / Protein	High count
+IPR019749		Targeting	High count
+IPR001173		Transferase / Sugar	High count
+IPR001650		Unknown	High count
+IPR000772		Binding / Sugar	High count
+IPR000980		Binding / Phosphoprotein	High count
+IPR002049		Binding, EGF	High count
+IPR006207		Factor	High count
+IPR008930		Transferase	High count
+IPR009017		Binding / Protein	High count
+IPR011047		Alcohol dehyd.	High count
+IPR013151		IG	High count
+IPR014001		Binding / DNA	High count
+IPR014710		Isomerase / Sugar	High count
+IPR000716		Unknown,Inhibitor/Cleavage	High count
+IPR001870		Binding / Protein	High count
+IPR026823		EGF	High count
+IPR000859		Dimerisation, Binding	High count
+IPR001304		Binding / Sugar	High count
+IPR014352		Targeting	High count
+IPR023214		Hydrolase	High count
+IPR011042		Interaction / Protein	High count
+IPR003593		Binding / ATP	High count
+IPR011029		Interaction / Protein	High count
+IPR028889		Deubiquitinase	High count
+IPR029058		Hydrolase	High count
+IPR011991		Binding / DNA	High count
+IPR020683		Interaction / Protein	High count
+IPR003597		IG	High count
+IPR013761		Binding	High count
+IPR000436		Recognition	High count
+IPR014756		IG	High count
+IPR000372		Interaction / Protein	High count
+IPR000483		Interaction / Protein	High count
+IPR002290		Kinase	High count
+IPR017853		Hydrolase / Sugar	High count
+IPR011989		Binding	High count
+IPR029034		Factor	High count
+IPR001849		Targeting / Binding	High count
+IPR009003		Cleavage	High count
+IPR012336		Oxidoreductase	High count
+IPR013806		Unknown / Kringle	High count
+IPR001791		Binding	High count
+IPR002035		Interaction / Protein	High count
+IPR008993		Binding, Inhibitor / Cleavage	High count
+IPR013106		IG	High count
+IPR008979		Binding / Sugar	High count
+IPR011333		Interaction / Protein	High count
+IPR029021		Phosphatase	High count
+IPR016186		Binding / Sugar	High count
+IPR011162		MHC	High count
+IPR029071		Unknown	High count
+IPR029044		Transferase / Sugar	High count
+IPR003598		IG	High count
+IPR013098		IG	High count
+IPR011011		Binding	High count
+IPR011992		Binding / Calcium	High count
+IPR009030		Unclear	High count
+IPR016187		Binding / Sugar	High count
+IPR003599		IG	High count
+IPR011993		Binding / Lipid, Targeting	High count
+IPR013320		Binding / Sugar	High count
+IPR011009		Kinase	High count
+IPR013083		Binding	High count
+IPR027417		Binding / NTP	High count
+IPR015880		Binding	High count
+IPR013783		IG like	High count
+IPR000089		Binding	Low count
+IPR000409		Unknown	Low count
+IPR029063		Other	Low count
+IPR000014		Other	Low count
+IPR001762		Inhibitor / Cleavage	Low count
+IPR008916		Other	Low count
+IPR013649		Other	Low count
+IPR013694		Inhibitor / Cleavage	Low count
+IPR016181		Other	Low count
+IPR017878		Binding	Low count
+IPR020568		Other	Low count
+IPR003616		Other	Low count
+IPR009079		cytokine, factor	Low count
+IPR013162		IG	Low count
+IPR029787		Signal	Low count
+IPR003594		Binding / ATP	Low count
+IPR014716		Binding	Low count
+IPR014853		Unknown	Low count
+IPR016197		Other	Low count
+IPR028082		Binding / Protein	Low count
+IPR008211		Polymerisation	manual
+IPR023796		Inhibitor / Cleavage	manual
+IPR016054		Unknown	manual
+IPR011625		Unknown	manual
+IPR015369		Binding / Protein	frequent_missing
+IPR004839		Binding	frequent_missing
+IPR013768		Binding	frequent_missing
+IPR010660		Unknown	frequent_missing
+IPR005533		Adhesion	frequent_missing
+IPR003605		Activation	frequent_missing
+IPR000082		Unknown	frequent_missing
+IPR000566		Binding	frequent_missing
+IPR011038		Binding	frequent_missing
+IPR001199		Binding	frequent_missing
+IPR001623		Binding / Protein	frequent_missing
+IPR002861		Unknown	frequent_missing
+IPR003112		Unknown	frequent_missing
+IPR003410		IG	frequent_missing
+IPR004043		Binding / Sugar	frequent_missing
+IPR004133		Antagonist	frequent_missing
+IPR008280		Skipped	frequent_missing
+IPR009011		Binding / Man6p	frequent_missing
+IPR010536		Unknown	frequent_missing
+IPR009496		Unknown	frequent_missing
+IPR011001		Binding,Oligomerisation,conf change	frequent_missing
+IPR014044		Ca++chelating	frequent_missing
+IPR019466		Trimerisation	frequent_missing
+IPR019479		Membrane oxidation	frequent_missing
+IPR021852		Unknown	frequent_missing
+IPR024329		Dimerisation	frequent_missing
+IPR000034		Unknown	frequent_missing
+IPR025155		Unknown	frequent_missing
+IPR001148		Carbon hydration	frequent_missing
+IPR001507		Polymerisation	frequent_missing
+IPR002893		Binding / Protein	frequent_missing
+IPR003137		Recognition / Structure	frequent_missing
+IPR003609		Binding	frequent_missing
+IPR003644		Binding / Calcium	frequent_missing
+IPR005018		Adhesion	frequent_missing
+IPR007123		Binding	frequent_missing
+IPR007484		Cleavage	frequent_missing
+IPR009020		Cleavage / Activation	frequent_missing
+IPR011658		Binding / Sugar	frequent_missing
+IPR012919		Interaction / Protein	frequent_missing
+IPR021613		Adhesion / ECM, Self-cleavage	frequent_missing
+IPR022049		Kinase	frequent_missing
+IPR022385		Unknown	frequent_missing
+IPR021816		Unknown	frequent_missing
+IPR024571		Unknown	frequent_missing
+IPR025232		Unknown	frequent_missing
+IPR026966		Unknown	frequent_missing
+IPR028916		Unknown	frequent_missing
+IPR029006		Binding	frequent_missing
+IPR029403		Unknown	frequent_missing
+IPR006581		Binding / Protein	frequent_missing
+IPR009581		Kinase	frequent_missing
+IPR011705		Substrate orientation	frequent_missing
+IPR016017		Unknown, factor	frequent_missing
+IPR018392		Binding / Peptidoglycan	frequent_missing
+IPR021109		Cleavage	frequent_missing
+IPR029047		Binding / Protein	frequent_missing
+IPR029048		Stabilisation	frequent_missing
+IPR000494		Binding / Protein	frequent_missing
+IPR000519		Unknown	frequent_missing
+IPR000782		Adhesion	frequent_missing
+IPR000800		Structural / Capping 	frequent_missing
+IPR001526		Binding	frequent_missing
+IPR016054		Binding	frequent_missing
+IPR003988		IG-like	frequent_missing
+IPR007934		Binding / Sugar	frequent_missing
+IPR010457		IG	frequent_missing
+IPR012896		Unknown	frequent_missing
+IPR013787		Binding / Calcium	frequent_missing
+IPR015152		IG,Binding / Protein	frequent_missing
+IPR015321		IG,Binding / Cytokine	frequent_missing
+IPR015373		IG	frequent_missing
+IPR016090		Phospholipase	frequent_missing
+IPR027465		Binding / Protein	frequent_missing
+IPR029000		Isomerase / unfolded protein	frequent_missing
+IPR007365		Dimerisation	frequent_missing
+IPR027350		Transferase / Sugar	frequent_missing
+IPR000472		Binding / Protein	go_review
+IPR003605		Activation	go_review
+IPR018941		IG-like	go_review
+IPR006211		Aggregation	go_review
+IPR001879		Unknown	go_review
+IPR011500		Structure / Disulphide	go_review
+IPR001879		Skipped	go_review
+IPR017978		Skipped go_review
+IPR028942		Skipped	frequent_missing
+IPR027484		Skipped	frequent_missing
+IPR027483		Skipped	frequent_missing
+IPR027401		Skipped	frequent_missing
+IPR027267		Skipped	frequent_missing
+IPR024743		Skipped	frequent_missing
+IPR024600		Skipped	frequent_missing
+IPR024317		Skipped	frequent_missing
+IPR023213		Skipped	frequent_missing
+IPR023123		Skipped	frequent_missing
+IPR022750		Skipped	frequent_missing
+IPR022164		Skipped	frequent_missing
+IPR021918		Skipped	frequent_missing
+IPR021818		Skipped	frequent_missing
+IPR020850		Skipped	frequent_missing
+IPR019559		Skipped	frequent_missing
+IPR019558		Skipped	frequent_missing
+IPR018501		Skipped	frequent_missing
+IPR018500		Skipped	frequent_missing
+IPR017946		Skipped	frequent_missing
+IPR016158		Skipped	frequent_missing
+IPR016035		Skipped	frequent_missing
+IPR015947		Skipped	frequent_missing
+IPR014935		Skipped	frequent_missing
+IPR014836		Skipped	frequent_missing
+IPR014811		Skipped	frequent_missing
+IPR014772		Skipped	frequent_missing
+IPR014770		Skipped	frequent_missing
+IPR013602		Skipped	frequent_missing
+IPR013594		Skipped	frequent_missing
+IPR012990		Skipped	frequent_missing
+IPR012603		Skipped	frequent_missing
+IPR011053		Skipped	frequent_missing
+IPR010579		Skipped	frequent_missing
+IPR010011		Skipped	frequent_missing
+IPR009091		Skipped	frequent_missing
+IPR009001		Skipped	frequent_missing
+IPR009000		Skipped	frequent_missing
+IPR008955		Skipped	frequent_missing
+IPR008942		Skipped	frequent_missing
+IPR006900		Skipped	frequent_missing
+IPR006896		Skipped	frequent_missing
+IPR006821		Skipped	frequent_missing
+IPR005135		Skipped	frequent_missing
+IPR005108		Skipped	frequent_missing
+IPR004328		Skipped	frequent_missing
+IPR004273		Skipped	frequent_missing
+IPR004182		Skipped	frequent_missing
+IPR004170		Skipped	frequent_missing
+IPR004161		Skipped	frequent_missing
+IPR004160		Skipped	frequent_missing
+IPR004022		Skipped	frequent_missing
+IPR002498		Skipped	frequent_missing
+IPR001711		Skipped	frequent_missing
+IPR000909		Skipped	frequent_missing
+IPR000300		Skipped	frequent_missing
+IPR019486		Skipped	frequent_missing
+IPR018459		Skipped	frequent_missing
+IPR014720		Skipped	frequent_missing
+IPR012340		Skipped	frequent_missing
+IPR012317		Skipped	frequent_missing
+IPR003347		Skipped	frequent_missing
+IPR002999		Skipped	frequent_missing
+IPR002219		Skipped	frequent_missing
+IPR002190		Skipped	frequent_missing
+IPR001251		Skipped	frequent_missing
+IPR000313		Skipped	frequent_missing
+IPR000195		Skipped	frequent_missing
+IPR027357		Skipped	frequent_missing
+IPR027007		Skipped	frequent_missing
+IPR026831		Skipped	frequent_missing
+IPR022735		Skipped	frequent_missing
+IPR015425		Skipped	frequent_missing
+IPR014847		Skipped	frequent_missing
+IPR014799		Skipped	frequent_missing
+IPR014009		Skipped	frequent_missing
+IPR013548		Skipped	frequent_missing
+IPR011033		Skipped	frequent_missing
+IPR010703		Skipped	frequent_missing
+IPR009071		Skipped	frequent_missing
+IPR008936		Skipped	frequent_missing
+IPR004012		Skipped	frequent_missing
+IPR003889		Skipped	frequent_missing
+IPR003888		Skipped	frequent_missing
+IPR003034		Skipped	frequent_missing
+IPR001936		Skipped	frequent_missing
+IPR001357		Skipped	frequent_missing
+IPR000938		Skipped	frequent_missing
+IPR000906		Skipped	frequent_missing
+IPR000198		Skipped	frequent_missing
+IPR000095		Skipped	frequent_missing
+IPR018316		Skipped	frequent_missing
+IPR016159		Skipped	frequent_missing
+IPR023780		Skipped	frequent_missing
+IPR023298		Skipped	frequent_missing
+IPR014014		Skipped	frequent_missing
+IPR011709		Skipped	frequent_missing
+IPR011539		Skipped	frequent_missing
+IPR029060		Skipped	frequent_missing
+IPR024678		Skipped	frequent_missing
+IPR013809		Skipped	frequent_missing
+IPR004367		Skipped	frequent_missing
+IPR003008		Skipped	frequent_missing
+IPR027409		Skipped	frequent_missing
+IPR021893		Skipped	frequent_missing
+IPR016185		Skipped	frequent_missing
+IPR016137		Skipped	frequent_missing
+IPR014722		Skipped	frequent_missing
+IPR013767		Skipped	frequent_missing
+IPR011417		Skipped	frequent_missing
+IPR010660		Skipped	frequent_missing
+IPR010472		Skipped	frequent_missing
+IPR006576		Skipped	frequent_missing
+IPR005533		Skipped	frequent_missing
+IPR004154		Skipped	frequent_missing
+IPR004148		Skipped	frequent_missing
+IPR003894		Skipped	frequent_missing
+IPR003891		Skipped	frequent_missing
+IPR003650		Skipped	frequent_missing
+IPR003605		Skipped	frequent_missing
+IPR003350		Skipped	frequent_missing
+IPR003165		Skipped	frequent_missing
+IPR003130		Skipped	frequent_missing
+IPR002867		Skipped	frequent_missing
+IPR002710		Skipped	frequent_missing
+IPR002589		Skipped	frequent_missing
+IPR001763		Skipped	frequent_missing
+IPR001739		Skipped	frequent_missing
+IPR001594		Skipped	frequent_missing
+IPR000756		Skipped	frequent_missing
+IPR000375		Skipped	frequent_missing

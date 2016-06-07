@@ -1,1 +1,90 @@
-go	ClassGO:0003700	Transcription factorGO:0003713	Transcription factorGO:0008140	Transcription factorGO:0003824	Catalytic activityGO:0004866	Inhibit / CleavageGO:0030414	Inhibit / CleavageGO:0004867	Inhibit / CleavageGO:0004869	Inhibit / CleavageGO:0004857	InhibitGO:0005096	Inhibit / CleavageGO:0005044	Uptake / ReceptorGO:0005085	Nucleotide exchangeGO:0005089	Nucleotide exchangeGO:0005086	Nucleotide exchangeGO:0005198	StabilityGO:0005200	StructureGO:0005215	TransportGO:0005262	Ion ChannelGO:0005230	Ion ChannelGO:0005248	Ion ChannelGO:0008233	CleavageGO:0046983	Stability / DimerisationGO:0016715	OxioreductaseGO:0003755	FoldingGO:0004674	KinaseGO:0030247	Binding / SugarGO:0035091	BindingGO:0016491	OxioreductaseGO:0008289	Binding / LipidGO:0005515	Binding / ProteinGO:0030246	Binding / SugarGO:0016740	TransferaseGO:0043565	Transcription factorGO:0051536	BindingGO:0016787	HydrolaseGO:0005507	BindingGO:0005542	BindingGO:0008201	BindingGO:0071949	BindingGO:0003676	BindingGO:0004842	TransferaseGO:0008745	HydrolaseGO:0016747	TransferaseGO:0005509	BindingGO:0008237	CleavageGO:0004252	CleavageGO:0004222	CleavageGO:0004553	HydrolaseGO:0016810	HydrolaseGO:0016746	TransferaseGO:0008168	TransferaseGO:0016616	OxioreductaseGO:0046914	BindingGO:0003677	BindingGO:0008509	TransportGO:0005319	TransportGO:0010181	BindingGO:0003810	TransferaseGO:0003723	BindingGO:0017048	BindingGO:0004675	Receptor/KinaseGO:0016773	KinaseGO:0016301	KinaseGO:0005524	BindingGO:0000166	BindingGO:0004181	CleavageGO:0008270	BindingGO:0018024	TransferaseGO:0030674	BindingGO:0008083	FactorGO:0019904	BindingGO:0008017	BindingGO:0003779	BindingGO:0051015	BindingGO:0008009	ChemokineGO:0046982	Stability / DimerisationGO:0008234	CleavageGO:0008092	FoldingGO:0008134	Transcription factorGO:0005179	FactorGO:0005102	ReceptorGO:0046872	BindingGO:0004930	ReceptorGO:0004672	KinaseGO:0004713	KinaseGO:0005201	StructureGO:0005520	Binding / IGFGO:0036459	Cleavage / UbiquitinGO:0003774	MotorGO:0016887	MotorGO:0016791	PhosphataseGO:0004725	PhosphataseGO:0016972	Disulphide bond formation
+go	Class
+GO:0003700	Transcription factor
+GO:0003713	Transcription factor
+GO:0008140	Transcription factor
+GO:0003824	Catalytic activity
+GO:0004866	Inhibit / Cleavage
+GO:0030414	Inhibit / Cleavage
+GO:0004867	Inhibit / Cleavage
+GO:0004869	Inhibit / Cleavage
+GO:0004857	Inhibit
+GO:0005096	Inhibit / Cleavage
+GO:0005044	Binding
+GO:0005085	Nucleotide exchange
+GO:0005089	Nucleotide exchange
+GO:0005086	Nucleotide exchange
+GO:0005198	Stability
+GO:0005200	Structure
+GO:0005215	Transport
+GO:0005262	Ion Channel
+GO:0005230	Ion Channel
+GO:0005248	Ion Channel
+GO:0008233	Cleavage
+GO:0046983	Stability / Dimerisation
+GO:0016715	Oxidoreductase
+GO:0003755	Isomerase / unfolded protein
+GO:0004674	Kinase
+GO:0030247	Binding / Sugar
+GO:0035091	Binding
+GO:0016491	Oxidoreductase
+GO:0008289	Binding / Lipid
+GO:0005515	Binding / Protein
+GO:0030246	Binding / Sugar
+GO:0016740	Transferase
+GO:0043565	Transcription factor
+GO:0051536	Binding
+GO:0016787	Hydrolase
+GO:0005507	Binding
+GO:0005542	Binding
+GO:0008201	Binding
+GO:0071949	Binding
+GO:0003676	Binding
+GO:0004842	Transferase
+GO:0008745	Hydrolase
+GO:0016747	Transferase
+GO:0005509	Binding
+GO:0008237	Cleavage
+GO:0004252	Cleavage
+GO:0004222	Cleavage
+GO:0004553	Hydrolase
+GO:0016810	Hydrolase
+GO:0016746	Transferase
+GO:0008168	Transferase
+GO:0016616	Oxidoreductase
+GO:0046914	Binding
+GO:0003677	Binding
+GO:0008509	Transport
+GO:0005319	Transport
+GO:0010181	Binding
+GO:0003810	Transferase
+GO:0003723	Binding
+GO:0017048	Binding
+GO:0016773	Kinase
+GO:0016301	Kinase
+GO:0000166	Binding
+GO:0004181	Cleavage
+GO:0008270	Binding
+GO:0018024	Transferase
+GO:0008083	Factor
+GO:0019904	Binding
+GO:0008017	Binding
+GO:0003779	Binding
+GO:0051015	Binding
+GO:0008009	Chemokine
+GO:0046982	Stability / Dimerisation
+GO:0008234	Cleavage
+GO:0008092	Binding / Protein
+GO:0008134	Transcription factor
+GO:0005179	Factor
+GO:0005102	Binding / Ligand
+GO:0046872	Binding
+GO:0004672	Kinase
+GO:0004713	Kinase
+GO:0005201	Structure
+GO:0005520	Binding / Protein
+GO:0036459	Cleavage / Ubiquitin
+GO:0003774	Motor
+GO:0016887	Motor
+GO:0016791	Phosphatase
+GO:0004725	Phosphatase
+GO:0016972	Oxidoreductase

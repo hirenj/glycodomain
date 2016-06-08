@@ -19,12 +19,11 @@ GO:0005215	Transport
 GO:0005262	Ion Channel
 GO:0005230	Ion Channel
 GO:0005248	Ion Channel
-GO:0008233	Cleavage
+GO:0008233	Skipped
 GO:0046983	Stability / Dimerisation
 GO:0016715	Oxidoreductase
 GO:0003755	Isomerase / unfolded protein
 GO:0004674	Kinase
-GO:0030247	Binding / Sugar
 GO:0035091	Binding
 GO:0016491	Oxidoreductase
 GO:0008289	Binding / Lipid
@@ -70,7 +69,7 @@ GO:0019904	Binding
 GO:0008017	Binding
 GO:0003779	Binding
 GO:0051015	Binding
-GO:0008009	Chemokine
+GO:0008009	Factor
 GO:0046982	Stability / Dimerisation
 GO:0008234	Cleavage
 GO:0008092	Binding / Protein
@@ -80,11 +79,11 @@ GO:0005102	Binding / Ligand
 GO:0046872	Binding
 GO:0004672	Kinase
 GO:0004713	Kinase
-GO:0005201	Structure
 GO:0005520	Binding / Protein
 GO:0036459	Cleavage / Ubiquitin
 GO:0003774	Motor
-GO:0016887	Motor
+GO:0016887	ATPase
 GO:0016791	Phosphatase
 GO:0004725	Phosphatase
 GO:0016972	Oxidoreductase
+GO:0004559  Hydrolase / Sugar

@@ -1,46 +1,46 @@
 interpro	GO	Class	Source
 IPR000020	NA	Cleaved	GO_mapping
 IPR000198	NA	Skipped	GO_mapping
-IPR000203	NA	Cleaved / GPCR	GO_mapping
+IPR000203	NA	Cleaved	GO_mapping
 IPR000299	NA	Targeting	GO_mapping
-IPR001039	NA	MHC	GO_mapping
-IPR011161	NA	MHC	GO_mapping
+IPR001039	NA	Binding / Peptide	GO_mapping
+IPR011161	NA	Binding / Peptide	GO_mapping
 IPR013766	NA	Oxidoreductase	GO_mapping
 IPR013781	NA	Hydrolase / Sugar	GO_mapping
 IPR016024	NA	Binding	GO_mapping
-IPR017448	NA	Unknown	go_review
+IPR017448	NA	Binding / Protein	go_review
 IPR015352	NA	Binding / Protein	go_review
 IPR001190	NA	Binding / Protein	go_review
-IPR000083	NA	Fibronectin	GO_mapping
-IPR000159	NA	Signal	GO_mapping
-IPR000536	NA	Binding / Protein,Ligand	GO_mapping
-IPR000857	NA	Motor	GO_mapping
-IPR000998	NA	Binding / Adhesion	GO_mapping
+IPR000083	NA	Binding / Protein	GO_mapping
+IPR000159	NA	Skipped	GO_mapping
+IPR000536	NA	Skipped	GO_mapping
+IPR000857	NA	Skipped	GO_mapping
+IPR000998	NA	Binding / Protein	GO_mapping
 IPR001179	NA	Isomerase / unfolded protein	GO_mapping
 IPR001401	NA	Binding / GTP	GO_mapping
 IPR001565	NA	Binding / Lipid	GO_mapping
-IPR001774	NA	Ligand / Notch	GO_mapping
-IPR001799	NA	Ligand	GO_mapping
+IPR001774	NA	Binding / Ligand	GO_mapping
+IPR001799	NA	Binding / Ligand	GO_mapping
 IPR001928	NA	Cleaved	GO_mapping
-IPR002641	NA	Lipid	GO_mapping
+IPR002641	NA	Skipped	GO_mapping
 IPR003886	NA	Unknown	GO_mapping
 IPR003987	NA	Unknown	GO_mapping
-IPR006796	NA	Signal	GO_mapping
+IPR006796	NA	Binding / Protein	GO_mapping
 IPR008753	NA	Cleavage	GO_mapping
-IPR009038	NA	GOLD	GO_mapping
+IPR009038	NA	Binding / Protein	GO_mapping
 IPR009048	NA	Binding / Ligand	GO_mapping
 IPR009083	NA	Transcription factor	GO_mapping
 IPR009088	NA	Transcription factor	GO_mapping
-IPR009471	NA	EF-Hand	GO_mapping
+IPR009471	NA	Skipped	GO_mapping
 IPR010307	NA	Adhesion	GO_mapping
-IPR011651	NA	Ligand / Notch	GO_mapping
+IPR011651	NA	Binding / Ligand	GO_mapping
 IPR011656	NA	Notch	GO_mapping
 IPR012561	NA	Unknown	GO_mapping
 IPR014760	NA	Albumin	GO_mapping
 IPR015988	NA	Transcription factor	GO_mapping
-IPR016093	NA	MIR	GO_mapping
+IPR016093	NA	Unknown	GO_mapping
 IPR020858	NA	Albumin	GO_mapping
-IPR022416	NA	Prion	GO_mapping
+IPR022416	NA	Polymerisation	GO_mapping
 IPR000001		Unknown / Kringle	High count
 IPR002477		Binding / Peptidoglycan	High count
 IPR002919		Inhibit / Cleavage	High count
@@ -62,7 +62,7 @@ IPR001173		Transferase / Sugar	High count
 IPR001650		Unknown	High count
 IPR000772		Binding / Sugar	High count
 IPR000980		Binding / Phosphoprotein	High count
-IPR002049		Binding, EGF	High count
+IPR002049		Binding / Protein	High count
 IPR006207		Factor	High count
 IPR008930		Transferase	High count
 IPR009017		Binding / Protein	High count
@@ -72,8 +72,8 @@ IPR014001		Binding / DNA	High count
 IPR014710		Isomerase / Sugar	High count
 IPR000716		Inhibit / Cleavage	High count
 IPR001870		Binding / Protein	High count
-IPR026823		EGF	High count
-IPR000859		Dimerisation, Binding	High count
+IPR026823		Binding / Protein	High count
+IPR000859		Oligomerisation, Binding / Protein	High count
 IPR001304		Binding / Sugar	High count
 IPR014352		Targeting	High count
 IPR023214		Hydrolase	High count
@@ -86,7 +86,7 @@ IPR011991		Binding / DNA	High count
 IPR020683		Binding / Protein	High count
 IPR003597		IG	High count
 IPR013761		Binding	High count
-IPR000436		Recognition	High count
+IPR000436		Binding / Protein	High count
 IPR014756		IG	High count
 IPR000372		Binding / Protein	High count
 IPR000483		Unknown	High count
@@ -109,7 +109,7 @@ IPR008979		Binding / Sugar	High count
 IPR011333		Binding / Protein	High count
 IPR029021		Phosphatase	High count
 IPR016186		Binding / Sugar	High count
-IPR011162		MHC	High count
+IPR011162		Binding / Peptide	High count
 IPR029071		Unknown	High count
 IPR029044		Transferase / Sugar	High count
 IPR003598		IG	High count
@@ -140,7 +140,7 @@ IPR020568		Other	Low count
 IPR003616		Other	Low count
 IPR009079		cytokine, factor	Low count
 IPR013162		IG	Low count
-IPR029787		Signal	Low count
+IPR029787		Skipped	Low count
 IPR003594		Binding / ATP	Low count
 IPR014716		Binding	Low count
 IPR014853		Unknown	Low count
@@ -165,15 +165,14 @@ IPR002861		Unknown	frequent_missing
 IPR003112		Unknown	frequent_missing
 IPR003410		IG	frequent_missing
 IPR004043		Binding / Sugar	frequent_missing
-IPR004133		Antagonist	frequent_missing
 IPR008280		Skipped	frequent_missing
 IPR009011		Binding / Man6p	frequent_missing
 IPR010536		Unknown	frequent_missing
 IPR009496		Unknown	frequent_missing
-IPR011001		Binding,Oligomerisation,conf change	frequent_missing
+IPR011001		Binding / Lipid	frequent_missing
 IPR014044		Ca++chelating	frequent_missing
 IPR019466		Trimerisation	frequent_missing
-IPR019479		Membrane oxidation	frequent_missing
+IPR019479		Oxidoreductase	frequent_missing
 IPR021852		Unknown	frequent_missing
 IPR024329		Dimerisation	frequent_missing
 IPR000034		Unknown	frequent_missing
@@ -181,7 +180,7 @@ IPR025155		Unknown	frequent_missing
 IPR001148		Carbon hydration	frequent_missing
 IPR001507		Polymerisation	frequent_missing
 IPR002893		Binding / Protein	frequent_missing
-IPR003137		Recognition / Structure	frequent_missing
+IPR003137		Binding / Protein lid	frequent_missing
 IPR003609		Binding	frequent_missing
 IPR003644		Binding / Calcium	frequent_missing
 IPR005018		Adhesion	frequent_missing
@@ -190,7 +189,7 @@ IPR007484		Cleavage	frequent_missing
 IPR009020		Cleavage / Activation	frequent_missing
 IPR011658		Binding / Sugar	frequent_missing
 IPR012919		Skipped?	frequent_missing
-IPR021613		Adhesion / ECM, Self-cleavage	frequent_missing
+IPR021613		Adhesion / ECM	frequent_missing
 IPR022049		Kinase	frequent_missing
 IPR022385		Unknown	frequent_missing
 IPR021816		Unknown	frequent_missing
@@ -211,7 +210,7 @@ IPR029048		Stabilisation	frequent_missing
 IPR000494		Binding / Protein	frequent_missing
 IPR000519		Unknown	frequent_missing
 IPR000782		Adhesion	frequent_missing
-IPR000800		Structural / Capping 	frequent_missing
+IPR000800		Structural / Protein lid 	frequent_missing
 IPR001526		Binding	frequent_missing
 IPR016054		Binding	frequent_missing
 IPR003988		IG-like	frequent_missing
@@ -222,7 +221,7 @@ IPR013787		Binding / Calcium	frequent_missing
 IPR015152		IG,Binding / Protein	frequent_missing
 IPR015321		IG,Binding / Cytokine	frequent_missing
 IPR015373		IG	frequent_missing
-IPR016090		Phospholipase	frequent_missing
+IPR016090		Hydrolase / Phospholipid	frequent_missing
 IPR027465		Binding / Protein	frequent_missing
 IPR029000		Isomerase / unfolded protein	frequent_missing
 IPR007365		Dimerisation	frequent_missing
@@ -235,6 +234,9 @@ IPR001879		Unknown	go_review
 IPR011500		Structure / Disulphide	go_review
 IPR001879		Skipped	go_review
 IPR017978		Skipped go_review
+IPR000885		Unknown	go_review
+IPR010909		Unknown	go_review
+IPR010294		Unknown	go_review
 IPR030398		Cleavage	frequent_missing
 IPR008139		Multiple / Cleaved	frequent_missing
 IPR008138		Multiple / Cleaved	frequent_missing

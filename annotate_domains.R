@@ -151,7 +151,10 @@ overlapping_domains = function(query_interpro,target_interpro,all_domains) {
 expand_classes = function(classes,groups) {
   plyr::ddply(classes,'interpro',function(df) {
     children = child_terms(df$interpro[1],all_groups,10)
-    rbind(df,expand.grid(interpro=children[!is.na(children)],Class=df$Class))
+    child_classes = get_classes(children[!is.na(children)])
+    defined_classes = child_classes[!is.na(child_classes$Class),]
+    undefined_classes = child_classes[is.na(child_classes$Class),]
+    rbind(df,defined_classes,expand.grid(interpro=undefined_classes$interpro,Class=df$Class))
   })
 }
 

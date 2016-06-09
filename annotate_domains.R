@@ -34,7 +34,7 @@ if ( ! exists('all_sites.human')) {
     datas[,c('uniprot','site','peptide.start','peptide.end','biosrc','source.free','compartment')]
   }))
 
-  gator.flatpack = gator.flatpack[! gator.flatpack$biosrc %in% c('fibroblast_hcmv','fibroblast_hcmv2','fibroblast_vzv','fibroblast_vzv2','hacat_hsv2'),]
+  gator.flatpack = gator.flatpack[! gator.flatpack$biosrc %in% c('fibroblast_hcmv','fibroblast_hcmv2','fibroblast_vzv','fibroblast_vzv2','hacat_hsv2','p3hr1_ebv','p3hr1_ebv2','pustule_vzv'),]
   gator.flatpack = rbind(gator.flatpack,setNames(msdatas,names(gator.flatpack)))
 
   gator.flatpack$site = ifelse(is.na(gator.flatpack$sites.site),floor((as.numeric(gator.flatpack$peptide.start)+as.numeric(gator.flatpack$peptide.end))/2),gator.flatpack$sites.site )
@@ -42,14 +42,14 @@ if ( ! exists('all_sites.human')) {
   all_sites.human = all_sites[all_sites$uniprot %in% tolower(Rgator::getUniprotIds(9606)),]
 }
 
-if ( is.null(get('human.domains')) ) {
-  if ( is.null(get('transmembrane.uniprot.9606')) ) {
+if ( ! exists('human.domains') ) {
+  if ( ! exists('transmembrane.uniprot.9606') ) {
     Rgator:::downloadTransmembrane(9606)
   }
-  if ( is.null(get('interpro.9606')) ) {
+  if ( ! exists('interpro.9606') ) {
     Rgator::downloadInterproDomains(9606)
   }
-  human.domains = rbind( interpro.9606.annotated[interpro.9606.annotated$class == 'Domain',c('uniprot','dom','start','end')], transmembrane.uniprot.9606 )
+  human.domains = rbind( interpro.9606.annotated[interpro.9606.annotated$class %in% c('Domain','Repeat'),c('uniprot','dom','start','end')], transmembrane.uniprot.9606 )
 }
 
 get_classes = function(interpro) {
@@ -201,9 +201,15 @@ missing_low_frequency = sort(base::table(unique(human.domains[human.domains$unip
 final_classes = expand_classes(all_classes)
 
 human.glycodomains = apply_classes(human.domains,final_classes)
+human.glycodomains = human.glycodomains[! human.glycodomains$dom == 'REMOVE',]
 
 #cytosolic = read.delim('cytosolic.txt',header=F)$V1
 
-domainsets.glycodomain = Rgator::calculateDomainSets(all_sites.human,'site',human.glycodomains,stem_distance=50,remove_tm_overlaps = TRUE)
+domainsets.glycodomain = Rgator::calculateDomainSets(all_sites.human,'site',human.glycodomains,stem_distance=10000,remove_tm_overlaps = TRUE)
 
 #sort(table(unique(domainsets.glycodomain$inside[,c('uniprot','dom')])$dom))
+
+set_lengths = unlist(lapply(domainsets.glycodomain,function(set) { length(unique(set$sitekey))}))
+
+set_lengths[c('nodomains','multipass.tail','norc_soluble','norc_membrane','stem','interdomain','multipass.loop')]
+

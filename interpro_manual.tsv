@@ -263,6 +263,23 @@ IPR028146		Stability / Targetting	frequent_missing
 IPR022176		Unknown	frequent_missing
 IPR010895		IG-like	frequent_missing
 IPR003812		Transferase / AMP	frequent_missing
+IPR000884		Unknown	repeat_frequent
+IPR008160		Structure	repeat_frequent
+IPR016201		Unknown	repeat_frequent
+IPR002165		Unknown	repeat_frequent
+IPR013519		Unknown	repeat_frequent
+IPR013517		Unknown	repeat_frequent
+IPR020472		Scaffold assembly	repeat_frequent
+IPR029055		Hydrolase	frequent_missing
+IPR013105		Binding / Protein	repeat_frequent
+IPR006597		Binding / Protein	repeat_frequent
+IPR004092		Skipped	frequent_missing
+IPR003607		Skipped	frequent_missing
+IPR001101		Skipped	frequent_missing
+IPR002073		Skipped	frequent_missing
+IPR008952		REMOVE	frequent_missing
+IPR003585		Skipped	frequent_missing
+IPR015424		Skipped	frequent_missing
 IPR003993		Skipped	frequent_missing
 IPR012989		Skipped	frequent_missing
 IPR016071		Skipped	frequent_missing

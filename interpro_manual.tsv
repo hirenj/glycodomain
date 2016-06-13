@@ -49,7 +49,7 @@ IPR013980		Binding / Protein	High count
 IPR016040		Binding / NADP	High count
 IPR018490		Binding / CAMP	High count
 IPR018933		Inhibit / Cleavage	High count
-IPR019748		Targeting	High count
+IPR019748		Binding / Protein	High count
 IPR022409		IG like	High count
 IPR000421		Binding / Sugar	High count
 IPR000585		Binding	High count
@@ -57,7 +57,7 @@ IPR001846		Binding	High count
 IPR002181		Binding	High count
 IPR011511		Binding / Protein	High count
 IPR015940		Binding / Protein	High count
-IPR019749		Targeting	High count
+IPR019749		Skipped	go_review
 IPR001173		Transferase / Sugar	High count
 IPR001650		Unknown	High count
 IPR000772		Binding / Sugar	High count
@@ -75,7 +75,8 @@ IPR001870		Binding / Protein	High count
 IPR026823		Binding / Protein	High count
 IPR000859		Oligomerisation, Binding / Protein	High count
 IPR001304		Binding / Sugar	High count
-IPR014352		Targeting	High count
+IPR014352		Binding / Lipid, Targeting	High count
+IPR000582		Binding, Inhibitor, Factor	go_review
 IPR023214		Hydrolase	High count
 IPR011042		Binding / Protein	High count
 IPR003593		Binding / ATP	High count
@@ -95,7 +96,7 @@ IPR002290		Kinase	High count
 IPR017853		Hydrolase / Sugar	High count
 IPR011989		Binding	High count
 IPR029034		Factor	High count
-IPR001849		Targeting / Binding	High count
+IPR001849		Binding / Lipid, Targeting	High count
 IPR009003		Cleavage	High count
 IPR012336		Oxidoreductase	High count
 IPR013806		Unknown / Kringle	High count
@@ -107,7 +108,7 @@ IPR004850		Binding / Protein	High count
 IPR013106		IG	High count
 IPR008979		Binding / Sugar	High count
 IPR011333		Binding / Protein	High count
-IPR029021		Phosphatase	High count
+IPR029021		Hydrolase / Phospho	High count
 IPR016186		Binding / Sugar	High count
 IPR011162		Binding / Peptide	High count
 IPR029071		Unknown	High count
@@ -233,10 +234,21 @@ IPR006211		Aggregation	go_review
 IPR001879		Unknown	go_review
 IPR011500		Structure / Disulphide	go_review
 IPR001879		Skipped	go_review
-IPR017978		Skipped go_review
+IPR017978		Skipped	go_review
 IPR000885		Unknown	go_review
 IPR010909		Unknown	go_review
 IPR010294		Unknown	go_review
+IPR000479		Binding / Protein	go_review
+IPR013769		Skipped	go_review
+IPR016152		Skipped	go_review
+IPR001747		Unknown	go_review
+IPR009454		Unknown	go_review
+IPR011030		Unknown	go_review
+IPR015255		Unknown	go_review
+IPR015816		Unknown	go_review
+IPR015817		Unknown	go_review
+IPR015818		Unknown	go_review
+IPR015819		Unknown	go_review
 IPR030398		Cleavage	frequent_missing
 IPR008139		Multiple / Cleaved	frequent_missing
 IPR008138		Multiple / Cleaved	frequent_missing
@@ -273,6 +285,30 @@ IPR020472		Scaffold assembly	repeat_frequent
 IPR029055		Hydrolase	frequent_missing
 IPR013105		Binding / Protein	repeat_frequent
 IPR006597		Binding / Protein	repeat_frequent
+IPR011013		Binding / Sugar	go_review
+IPR000873		Skipped	go_review
+IPR015421		Skipped	go_review
+IPR015422		Skipped	go_review
+IPR000873		Skipped	go_review
+IPR013785		Skipped	go_review
+IPR017849		Hydrolase / Phospho	go_review
+IPR017850		Hydrolase / Phospho	go_review
+IPR020630		Skipped	go_review
+IPR015813		Skipped	go_review
+IPR011249		Skipped	go_review
+IPR008977		Amidation	go_review
+IPR020045		Skipped	go_review
+IPR008948		Skipped	go_review
+IPR011330		Hydrolase / Sugar	go_review
+IPR010997		Skipped	go_review
+IPR016166		Skipped	go_review
+IPR016167		Skipped	go_review
+IPR001932		Hydrolase / Phospho	go_review
+IPR006638		Transferase	go_review
+IPR007197		Transferase	go_review
+IPR013848		Transferase	go_review
+IPR011042		Binding / Protein	go_review
+IPR001736		Phospholipase	go_review
 IPR004092		Skipped	frequent_missing
 IPR003607		Skipped	frequent_missing
 IPR001101		Skipped	frequent_missing

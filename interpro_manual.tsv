@@ -29,26 +29,26 @@ IPR006796	NA	Binding / Protein	GO_mapping
 IPR008753	NA	Cleavage	GO_mapping
 IPR009038	NA	Binding / Protein	GO_mapping
 IPR009048	NA	Binding / Ligand	GO_mapping
-IPR009083	NA	Transcription factor	GO_mapping
-IPR009088	NA	Transcription factor	GO_mapping
+IPR009083	NA	Skipped	GO_mapping
+IPR009088	NA	Skipped	GO_mapping
 IPR009471	NA	Skipped	GO_mapping
 IPR010307	NA	Adhesion	GO_mapping
 IPR011651	NA	Binding / Ligand	GO_mapping
 IPR011656	NA	Unknown	GO_mapping
 IPR012561	NA	Unknown	GO_mapping
 IPR014760	NA	Unknown	GO_mapping
-IPR015988	NA	Transcription factor	GO_mapping
+IPR015988	NA	Skipped	GO_mapping
 IPR016093	NA	Unknown	GO_mapping
 IPR020858	NA	Unknown	GO_mapping
 IPR022416	NA	Oligomerisation	GO_mapping
 IPR000001		Unknown / Kringle	High count
 IPR002477		Binding / Peptidoglycan	High count
-IPR002919		Inhibit / Cleavage	High count
+IPR002919		Inhibitor / Cleavage	High count
 IPR008972		Cupredoxin	High count
 IPR013980		Binding / Protein	High count
 IPR016040		Binding / NADP	High count
 IPR018490		Binding / CAMP	High count
-IPR018933		Inhibit / Cleavage	High count
+IPR018933		Inhibitor / Cleavage	High count
 IPR019748		Binding / Protein	High count
 IPR022409		IG-like	High count
 IPR000421		Binding / Sugar	High count
@@ -70,7 +70,7 @@ IPR011047		Alcohol dehyd.	High count
 IPR013151		IG	High count
 IPR014001		Binding / DNA	High count
 IPR014710		Isomerase / Sugar	High count
-IPR000716		Inhibit / Cleavage	High count
+IPR000716		Inhibitor / Cleavage	High count
 IPR001870		Binding / Protein	High count
 IPR026823		Binding / Protein	High count
 IPR000859		Oligomerisation, Binding / Protein	High count
@@ -103,7 +103,7 @@ IPR013806		Unknown / Kringle	High count
 IPR001791		Binding	High count
 IPR002035		Adhesion / Metal-dependent	High count
 IPR008993		Binding	High count
-IPR001134		Inhibit / Cleavage	High count
+IPR001134		Inhibitor / Cleavage	High count
 IPR004850		Binding / Protein	High count
 IPR013106		IG	High count
 IPR008979		Binding / Sugar	High count
@@ -131,10 +131,10 @@ IPR000089		Binding	Low count
 IPR000409		Unknown	Low count
 IPR029063		Other	Low count
 IPR000014		Other	Low count
-IPR001762		Inhibit / Cleavage	Low count
+IPR001762		Inhibitor / Cleavage	Low count
 IPR008916		Other	Low count
 IPR013649		Other	Low count
-IPR013694		Inhibit / Cleavage	Low count
+IPR013694		Inhibitor / Cleavage	Low count
 IPR016181		Other	Low count
 IPR017878		Binding	Low count
 IPR020568		Other	Low count
@@ -148,7 +148,7 @@ IPR014853		Unknown	Low count
 IPR016197		Other	Low count
 IPR028082		Binding / Protein	Low count
 IPR008211		Oligomerisation	manual
-IPR023796		Inhibit / Cleavage	manual
+IPR023796		Inhibitor / Cleavage	manual
 IPR016054		Unknown	manual
 IPR011625		Unknown	manual
 IPR015369		Binding / Protein	frequent_missing

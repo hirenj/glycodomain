@@ -316,7 +316,7 @@ IPR006638		Transferase	go_review
 IPR007197		Transferase	go_review
 IPR013848		Transferase	go_review
 IPR011042		Binding / Protein	go_review
-IPR001736		Phospholipase	go_review
+IPR001736		Skipped	go_review
 IPR011704		Skipped	go_review
 IPR003439		Binding / ATP	go_review
 IPR004092		Skipped	frequent_missing

@@ -294,7 +294,6 @@ IPR029055		Hydrolase	frequent_missing
 IPR013105		Binding / Protein	repeat_frequent
 IPR006597		Binding / Protein	repeat_frequent
 IPR011013		Binding / Sugar	go_review
-IPR000873		Skipped	go_review
 IPR015421		Skipped	go_review
 IPR015422		Skipped	go_review
 IPR000873		Skipped	go_review
@@ -302,6 +301,7 @@ IPR013785		Skipped	go_review
 IPR017849		Hydrolase / Phospho	go_review
 IPR017850		Hydrolase / Phospho	go_review
 IPR020630		Skipped	go_review
+IPR020631		Skipped	go_review
 IPR015813		Skipped	go_review
 IPR011249		Skipped	go_review
 IPR008977		Amidation	go_review

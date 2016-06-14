@@ -1,7 +1,7 @@
 go	Class
-GO:0003700	Transcription factor
-GO:0003713	Transcription factor
-GO:0008140	Transcription factor
+GO:0003700	Skipped
+GO:0003713	Skipped
+GO:0008140	Skipped
 GO:0003824	Catalytic activity
 GO:0004866	Inhibit / Cleavage
 GO:0030414	Inhibit / Cleavage
@@ -10,17 +10,17 @@ GO:0004869	Inhibit / Cleavage
 GO:0004857	Inhibit / Cleavage
 GO:0005096	Inhibit / Cleavage
 GO:0005044	Binding
-GO:0005085	Nucleotide exchange
-GO:0005089	Nucleotide exchange
-GO:0005086	Nucleotide exchange
-GO:0005198	Stability
-GO:0005200	Structure
+GO:0005085	Skipped
+GO:0005089	Skipped
+GO:0005086	Skipped
+GO:0005198	Skipped
+GO:0005200	Skipped
 GO:0005215	Skipped
-GO:0005262	Ion Channel
-GO:0005230	Ion Channel
-GO:0005248	Ion Channel
+GO:0005262	Skipped
+GO:0005230	Skipped
+GO:0005248	Skipped
 GO:0008233	Skipped
-GO:0046983	Stability / Dimerisation
+GO:0046983	Stability / Oligomerisation
 GO:0016715	Oxidoreductase
 GO:0003755	Isomerase / unfolded protein
 GO:0004674	Kinase
@@ -30,7 +30,7 @@ GO:0008289	Binding / Lipid
 GO:0005515	Binding / Protein
 GO:0030246	Binding / Sugar
 GO:0016740	Transferase
-GO:0043565	Transcription factor
+GO:0043565	Skipped
 GO:0051536	Binding
 GO:0016787	Hydrolase
 GO:0005507	Binding
@@ -71,19 +71,19 @@ GO:0008017	Binding
 GO:0003779	Binding
 GO:0051015	Binding
 GO:0008009	Factor
-GO:0046982	Stability / Dimerisation
+GO:0046982	Stability / Oligomerisation
 GO:0008234	Cleavage
 GO:0008092	Binding / Protein
-GO:0008134	Transcription factor
+GO:0008134	Skipped
 GO:0005179	Factor
 GO:0005102	Binding / Ligand
 GO:0046872	Binding
 GO:0004672	Kinase
 GO:0004713	Kinase
 GO:0005520	Binding / Protein
-GO:0036459	Cleavage / Ubiquitin
-GO:0003774	Motor
-GO:0016887	ATPase
+GO:0036459	Hydrolase / Ubiquitin
+GO:0003774	Skipped
+GO:0016887	Skipped
 GO:0016791	Hydrolase / Phospho
 GO:0004725	Hydrolase / Phospho
 GO:0016972	Oxidoreductase

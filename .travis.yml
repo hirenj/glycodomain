@@ -16,6 +16,7 @@ deploy:
   file: Glycodomain-*.tsv
   skip_cleanup: true
   upload-dir: glycodomain
+  bucket: node-lambda
   on:
     tags: true
   access_key_id: AKIAJ2VL3UT6LDQRRRAA

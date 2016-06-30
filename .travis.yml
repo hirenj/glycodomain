@@ -1,22 +1,23 @@
 language: r
-env:
-  global:
-  - secure: FvhNfXjIwmwsoe8hVljAxk/tCJ+YZOr+2hRtc6PZRnV4D2gtjsY7iX2oSE88GyLof2jMAW4MTc6odk8+U1Aqxke+Cc6Nna+GiR1tt1RinlcJ51jA1RVD48onBW7s1dcNSCJXmyEknSFPxp3PRIdS4P5uA04el1XoMOMXcoCebuxkthez8i3VF0M+4IieR9383DNWQTI9f3slmTxnfci807yIzTI0hn0njYR8mqJTPtXGnfmZSdlZPS1WMQlv8suEjIMTqR2ikYwcwwTx1r0d3oz8u4Kml3mWfLrY7BNl8dvNGpJERkB2ozHoWC0HDu68wegmXxRBE/f8bZRZ124G/P2JCCBACP9aY2fE5LoYB6qi0HXMLAYk25vu1XaHcVj8h9u/n2nkm6T7nsND/SqE1b4NUBlA7Psf885kd4LP+yed7Y9rz8054Fcn5jyrXZV7i4adRW+qsFVRbytcYm2D3xkMN+CHVAqlU6OEmJ7qLdthoYYeG/bPInbMq21HOwcUJ8lp6cGOjRXeAQzZ2G1Xjtn4pxzqrmE+WL8bfxe1ALgI0zsEVq03FohKWHQuwzG8okKOEMpBlOzsOmg3FAlWO1O+UHjBhyFVW5NrCKashasTfybqhUXDDdFt2GrduOMXoBwvm/pHQeMrJxwAg3fn8uVaPNp5K+dAly2bVCscLfQ=
-  - secure: uJlvtoPtXDsjAoGuBxcQ7uF3VOomkAw4K5h8wpqXKaQnvpF0SHSHcFFLZFdd90nlECX0NLEt9hE4z3Zum4SR7u6oHWvGSO6edJI+IS4DfqZWe+pYWe6czn2ObV141XH3d2A65Mz4959+69s4SFuOwx6EearLoqkOXtn8fjQLDkNU/hd3FHjKBZliNEFfmjyA8LnQyZxsaPVMK6NcSUc3H3rODWuamlhJX9s024aUtNzmqqWit/G5u7BcL3eAuAXvrF6zJAoI088O/rCxI9FjJ5zuBgkHlM/pJWyxxE8Ow88TcQ1iTuOsr2PSZHWqO+O4AngM20mrzBnA0f6kZrvKH59n63pLGtsj0OMMWy724l6715oDjHd3Qnk0X+wJInMqtpGq2j2AhMGzZPd0zLwNZBfVOgcgAd+X9oFqRUGlYkY3HbiXEMO/dTCnNFhpCjA4bv5F5GtUBwaKUM3SlRiTUWa5fxpa/52oCtcHGxLt7hLLlgKVLcz8TfmUVWdRZ8xf9MP0aa5Nnuq6Cs4bYcd7E0HAYpgYNCSkwAyj/WojJTysgKCN0PDQvFqsawsfyEgFrwKEwrLm/qMdmfsWcUJxrocMJ953J/sK8An8EiNb/Z/qxVhqOM4LI5j837rIUUW87aFNaknUL5508slJezj1nkytbe/5p9FeZ9+J57gK+rk=
 cache: packages
 warnings_are_errors: false
 r_check_arg: --no-manual
 script: R CMD BATCH annotate_domains.R && cat annotate_domains.Rout
 after_success:
-  - test ! -z ${TRAVIS_TAG} && curr=$(ls -1 Glycodomain-*[0-9]*.tsv) && cp $curr "Glycodomain-${TRAVIS_TAG}${curr#Glycodomain}" && cp $curr "Glycodomain-latest${curr#Glycodomain}" && cp Glycodomain-latest*.tsv Glycodomain-latest-InterPro-latest-class.tsv && rm $curr
+- test ! -z ${TRAVIS_TAG} && curr=$(ls -1 Glycodomain-*[0-9]*.tsv) && cp $curr "Glycodomain-${TRAVIS_TAG}${curr#Glycodomain}"
+  && cp $curr "Glycodomain-latest${curr#Glycodomain}" && cp Glycodomain-latest*.tsv
+  Glycodomain-latest-InterPro-latest-class.tsv && rm $curr
 before_deploy:
-  - export RELEASE_FILES=$(ls Glycodomain-*.tsv)
-  - echo "Deploying $RELEASE_FILES"
+- export RELEASE_FILES=$(ls Glycodomain-*.tsv)
+- echo "Deploying $RELEASE_FILES"
 deploy:
   provider: s3
   file_glob: true
-  file: "Glycodomain-*.tsv"
+  file: Glycodomain-*.tsv
   skip_cleanup: true
   upload-dir: glycodomain
   on:
-      tags: true
+    tags: true
+  access_key_id: AKIAJ2VL3UT6LDQRRRAA
+  secret_access_key:
+    secure: GLRl1tnDXXDrFUQsPJ3VudZNAQMRImHcwWfBOhGZhUrYzVW+SrvbU8tPlSdC6So+k8OFP5DysuxRx3niDq63LZaBAzAQI6cZmjFmMYBwahML2CAGexMB3IVuwRx7YaTeXseqbmW1Mlcp8oHEOx6r99Fay2PrTxyb9A/fgwTysr01Xmbb4c4p7ZfR41ryi2SnqZ6HvsCXAtdWj14nuBCCcs9LKo9TySIoW+7KB62t/5+2g55DDlqSERlcqOsP9E6HwF///LDLF6Nay9r/8ZrWaoxyt878K7hdkONUJFAo55U/2BUgczgvtMBbWmgNqFyQxSszZmj2CPFd5tU2rXiBrf50Jj5C08MTMiLp/K3RaLWTP4x0iKih2mLTZ+A9lwXu32fCUyPouM+u1b8fJdJQ8v9kuCSSVYtndmjPyUq7SFr21RGPdlPYFM8ORgrDjgXTd9G+84bM4TH+WsufseV7WbSg8WipfKomcbcC1zI01dpdFCTOWivkchLMf+n4qdvsLRqapdD2hNXWLDyoYWLwxHq31Qfu9SvESs+RYtxfVDz8mUjpmA+8Nll/uARyQODI4hqXQiAz9/cahQP3xQRK0jqJw3gZIeusXxx3Aq6O1Ny7/DaqZOakMAgiQ/o+fPpLyR0UGK5Y+/45jPs/ZAe11nt1qbe2g8wAC3VwFC0x0Vs=

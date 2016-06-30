@@ -14,7 +14,7 @@ go_manual_mappings = read.delim('go_manual.tsv')
 interpro_manual_mappings = read.delim('interpro_manual.tsv')
 
 get_classes = function(interpro) {
-  go_mapped = merge(interpro_raw_go[interpro_raw_go$interpro %in% interpro,], go_manual_mappings,by='go')[,c('interpro','Class')]
+  go_mapped = merge(interpro_raw_go[interpro_raw_go$interpro %in% interpro & interpro_raw_go$go %in% go_manual_mappings$go,], go_manual_mappings,by='go')[,c('interpro','Class')]
   manual_mapped = interpro_manual_mappings[interpro_manual_mappings$interpro %in% interpro,c('interpro','Class')]
   all_mapped = rbind(go_mapped,manual_mapped)
   if (length(unique(all_mapped$interpro)) == length(unique(interpro))) {
@@ -79,22 +79,18 @@ expand_classes = function(classes,groups) {
     defined_classes = child_classes[!is.na(child_classes$Class),]
     undefined_classes = child_classes[is.na(child_classes$Class),]
     rbind(df,defined_classes,expand.grid(interpro=undefined_classes$interpro,Class=df$Class))
-  })
+  },.progress='text')
 }
 
 all_groups = group_interpros(interpro_raw_relations)
 
 # We should write the overlapping domains out somewhere...
 
-overlaps = overlapping_domains(all_classes[is.na(all_classes$Class),'interpro'], all_classes[! is.na(all_classes$Class),'interpro'], human.domains[human.domains$uniprot %in% all_sites.human$uniprot,])
-overlaps$key = paste(overlaps$query,overlaps$target)
-overlap_counts = table(unique(overlaps)$key)
+overlap_mapping = read.delim('overlap_manual.tsv',header=T)
 
-overlap_mapping = unique(overlaps[ ! grepl("TMhelix",overlaps$key) & overlaps$key %in% names(overlap_counts[overlap_counts > 2]),c('query','target')])
+overlap_classes = setNames(merge(overlap_mapping,get_classes(overlap_mapping$target),by.x='target',by.y='interpro')[,c('source','Class')],c('interpro','Class'))
 
-overlap_classes = setNames(merge(overlap_mapping,all_classes,by.x='target',by.y='interpro')[,c('query','Class')],c('interpro','Class'))
-
-all_classes = get_classes(unique(domainsets$all$dom))
+all_classes = get_classes(unique(c(interpro_raw_go$interpro,interpro_manual_mappings$interpro)))
 
 all_classes = rbind(all_classes[! is.na(all_classes$Class),],overlap_classes)
 

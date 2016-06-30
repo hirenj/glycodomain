@@ -1,11 +1,15 @@
+INTERPRO_RELEASE_URL = 'ftp://ftp.ebi.ac.uk/pub/databases/interpro/current/release_notes.txt'
+INTERPRO_RELATIONS_URL = 'ftp://ftp.ebi.ac.uk/pub/databases/interpro/current/ParentChildTreeFile.txt'
+INTERPRO_GO_URL = 'ftp://ftp.ebi.ac.uk/pub/databases/interpro/current/interpro2go'
+
+interpro_release = unlist(strsplit(grep("^Release\\s[0-9]",readLines(INTERPRO_RELEASE_URL),value=T),'[ ,]'))[2]
+
 if ( ! exists('interpro_raw_relations') ) {
-  download.file('ftp://ftp.ebi.ac.uk/pub/databases/interpro/current/ParentChildTreeFile.txt','interpro_relations.txt')
-  interpro_raw_relations = gsub('::.*','',readLines('interpro_relations.txt'))
+  interpro_raw_relations = gsub('::.*','',readLines(INTERPRO_RELATIONS_URL))
 }
 
 if ( ! exists('interpro_raw_go')) {
-  download.file('http://www.geneontology.org/external2go/interpro2go','interpro_go.txt')
-  interpro_raw_go = gsub('^InterPro:','',Filter(function(x) grepl("^InterPro",x),readLines('interpro_go.txt')))
+  interpro_raw_go = gsub('^InterPro:','',Filter(function(x) grepl("^InterPro",x),readLines(INTERPRO_GO_URL)))
   interpro_raw_go = as.data.frame(matrix( unlist(lapply(interpro_raw_go,function(x) { lapply(strsplit(x,' '), function(vals) { vals[c(1,length(vals))] }) })), ncol=2,byrow=T))
   interpro_raw_go = setNames(interpro_raw_go,c('interpro','go'))
 }

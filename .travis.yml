@@ -8,14 +8,14 @@ warnings_are_errors: false
 r_check_arg: --no-manual
 script: R CMD BATCH annotate_domains.R && cat annotate_domains.Rout
 after_success:
-  - test ! -z ${TRAVIS_TAG} && curr=$(ls -1 Glycodomain-*[0-9]*.tsv) && cp $curr "Glycodomain-${TRAVIS_TAG}${curr#Glycodomain}" && cp $curr "Glycodomain-latest${curr#Glycodomain}" && cp Glycodomain-latest*.tsv Glycodomain-latest-InterPro-latest-class.tsv
+  - test ! -z ${TRAVIS_TAG} && curr=$(ls -1 Glycodomain-*[0-9]*.tsv) && cp $curr "Glycodomain-${TRAVIS_TAG}${curr#Glycodomain}" && cp $curr "Glycodomain-latest${curr#Glycodomain}" && cp Glycodomain-latest*.tsv Glycodomain-latest-InterPro-latest-class.tsv && rm $curr
 before_deploy:
-  - export RELEASE_FILES=$(ls Glycodomain-${TRAVIS_TAG}*.tsv Glycodomain-latest*.tsv)
+  - export RELEASE_FILES=$(ls Glycodomain-*.tsv)
   - echo "Deploying $RELEASE_FILES"
 deploy:
   provider: s3
   file_glob: true
-  file: "${RELEASE_FILES}"
+  file: "Glycodomain-*.tsv"
   skip_cleanup: true
   upload-dir: glycodomain
   on:

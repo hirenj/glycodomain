@@ -1,5 +1,5 @@
 if ( ! exists('interpro_raw_relations') ) {
-  download.file('ftp://ftp.ebi.ac.uk/pub/databases/interpro/ParentChildTreeFile.txt','interpro_relations.txt')
+  download.file('ftp://ftp.ebi.ac.uk/pub/databases/interpro/current/ParentChildTreeFile.txt','interpro_relations.txt')
   interpro_raw_relations = gsub('::.*','',readLines('interpro_relations.txt'))
 }
 
@@ -98,3 +98,4 @@ final_classes = expand_classes(all_classes)
 
 # Export final_classes to a file that we upload somewhere.
 
+write.table(unique(final_classes[final_classes$Class != 'Skipped',]),file='Glycodomain-class.tsv',row.names=F,col.names=T,quote=F)

@@ -1,0 +1,5 @@
+language: r
+cache: packages
+after_success:
+  - test ! -z ${TRAVIS_TAG} && curr=$(ls -1 Glycodomain-*[0-9]*.tsv) && cp $curr "Glycodomain-${TRAVIS_TAG}${curr#Glycodomain}" && cp $curr "Glycodomain-latest${curr#Glycodomain}" && cp Glycodomain-latest*.tsv Glycodomain-latest-InterPro-latest-class.tsv
+  - test ! -z ${TRAVIS_TAG} && artifacts upload Glycodomain-${TRAVIS_TAG}*.tsv Glycodomain-latest*.tsv

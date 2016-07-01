@@ -102,5 +102,5 @@ final_classes = expand_classes(all_classes)
 
 # Export final_classes to a file that we upload somewhere.
 
-write.table(unique(final_classes[final_classes$Class != 'Skipped',]),file=paste('Glycodomain','Interpro',interpro_release,'class.tsv',sep='-'),row.names=F,col.names=T,quote=F)
+write.table(unique(final_classes[final_classes$Class != 'Skipped',]),file=paste('Glycodomain','Interpro',interpro_release,'class.tsv',sep='-'),row.names=F,col.names=T,quote=F,sep='\t')
 

@@ -29,6 +29,8 @@ interpro_manual_mappings = read.delim('interpro_manual.tsv')
 nrow(interpro_manual_mappings)
 
 get_classes = function(interpro) {
+  message(head(interpro_raw_go))
+  message(head(go_manual_mappings))
   go_mapped = merge(interpro_raw_go[interpro_raw_go$interpro %in% interpro & interpro_raw_go$go %in% go_manual_mappings$go,], go_manual_mappings,by='go')[,c('interpro','Class')]
   message(nrow(go_mapped))
   manual_mapped = interpro_manual_mappings[interpro_manual_mappings$interpro %in% interpro,c('interpro','Class')]

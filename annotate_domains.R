@@ -8,11 +8,15 @@ if ( ! exists('interpro_raw_relations') ) {
   interpro_raw_relations = gsub('::.*','',readLines(INTERPRO_RELATIONS_URL))
 }
 
+nrow(interpro_raw_relations)
+
 if ( ! exists('interpro_raw_go')) {
   interpro_raw_go = gsub('^InterPro:','',Filter(function(x) grepl("^InterPro",x),readLines(INTERPRO_GO_URL)))
   interpro_raw_go = as.data.frame(matrix( unlist(lapply(interpro_raw_go,function(x) { lapply(strsplit(x,' '), function(vals) { vals[c(1,length(vals))] }) })), ncol=2,byrow=T))
   interpro_raw_go = setNames(interpro_raw_go,c('interpro','go'))
 }
+
+nrow(interpro_raw_go)
 
 go_manual_mappings = read.delim('go_manual.tsv')
 interpro_manual_mappings = read.delim('interpro_manual.tsv')
@@ -99,6 +103,8 @@ all_classes = get_classes(unique(c(interpro_raw_go$interpro,interpro_manual_mapp
 all_classes = rbind(all_classes[! is.na(all_classes$Class),],overlap_classes)
 
 final_classes = expand_classes(all_classes)
+
+nrow(final_classes)
 
 # Export final_classes to a file that we upload somewhere.
 

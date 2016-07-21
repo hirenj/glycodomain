@@ -30,8 +30,10 @@ nrow(interpro_manual_mappings)
 
 get_classes = function(interpro) {
   go_mapped = merge(interpro_raw_go[interpro_raw_go$interpro %in% interpro & interpro_raw_go$go %in% go_manual_mappings$go,], go_manual_mappings,by='go')[,c('interpro','Class')]
+  message(nrow(go_mapped))
   manual_mapped = interpro_manual_mappings[interpro_manual_mappings$interpro %in% interpro,c('interpro','Class')]
   all_mapped = rbind(go_mapped,manual_mapped)
+  message(nrow(all_mapped))
   if (length(unique(all_mapped$interpro)) == length(unique(interpro))) {
     return (all_mapped)
   }

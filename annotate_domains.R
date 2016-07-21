@@ -1,3 +1,5 @@
+#options(stringsAsFactors=F)
+
 INTERPRO_RELEASE_URL = 'ftp://ftp.ebi.ac.uk/pub/databases/interpro/current/release_notes.txt'
 INTERPRO_RELATIONS_URL = 'ftp://ftp.ebi.ac.uk/pub/databases/interpro/current/ParentChildTreeFile.txt'
 INTERPRO_GO_URL = 'ftp://ftp.ebi.ac.uk/pub/databases/interpro/current/interpro2go'

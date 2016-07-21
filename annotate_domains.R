@@ -20,17 +20,19 @@ if ( ! exists('interpro_raw_go')) {
 
 nrow(interpro_raw_go)
 
-go_manual_mappings = read.delim('go_manual.tsv')
+go_manual_mappings = read.delim('go_manual.tsv',stringsAsFactors=F)
 
 nrow(go_manual_mappings)
 
-interpro_manual_mappings = read.delim('interpro_manual.tsv')
+interpro_manual_mappings = read.delim('interpro_manual.tsv',stringsAsFactors=F)
 
 nrow(interpro_manual_mappings)
 
+head(interpro_raw_go)
+head(go_manual_mappings)
+
+
 get_classes = function(interpro) {
-  message(head(interpro_raw_go))
-  message(head(go_manual_mappings))
   go_mapped = merge(interpro_raw_go[interpro_raw_go$interpro %in% interpro & interpro_raw_go$go %in% go_manual_mappings$go,], go_manual_mappings,by='go')[,c('interpro','Class')]
   message(nrow(go_mapped))
   manual_mapped = interpro_manual_mappings[interpro_manual_mappings$interpro %in% interpro,c('interpro','Class')]
@@ -107,7 +109,7 @@ length(all_groups)
 
 # We should write the overlapping domains out somewhere...
 
-overlap_mapping = read.delim('overlap_manual.tsv',header=T)
+overlap_mapping = read.delim('overlap_manual.tsv',header=T,stringsAsFactors=F)
 
 nrow(overlap_mapping)
 

@@ -8,7 +8,7 @@ if ( ! exists('interpro_raw_relations') ) {
   interpro_raw_relations = gsub('::.*','',readLines(INTERPRO_RELATIONS_URL))
 }
 
-nrow(interpro_raw_relations)
+length(interpro_raw_relations)
 
 if ( ! exists('interpro_raw_go')) {
   interpro_raw_go = gsub('^InterPro:','',Filter(function(x) grepl("^InterPro",x),readLines(INTERPRO_GO_URL)))
@@ -19,7 +19,12 @@ if ( ! exists('interpro_raw_go')) {
 nrow(interpro_raw_go)
 
 go_manual_mappings = read.delim('go_manual.tsv')
+
+nrow(go_manual_mappings)
+
 interpro_manual_mappings = read.delim('interpro_manual.tsv')
+
+nrow(interpro_manual_mappings)
 
 get_classes = function(interpro) {
   go_mapped = merge(interpro_raw_go[interpro_raw_go$interpro %in% interpro & interpro_raw_go$go %in% go_manual_mappings$go,], go_manual_mappings,by='go')[,c('interpro','Class')]
@@ -92,15 +97,25 @@ expand_classes = function(classes,groups) {
 
 all_groups = group_interpros(interpro_raw_relations)
 
+length(all_groups)
+
 # We should write the overlapping domains out somewhere...
 
 overlap_mapping = read.delim('overlap_manual.tsv',header=T)
 
+nrow(overlap_mapping)
+
 overlap_classes = setNames(merge(overlap_mapping,get_classes(overlap_mapping$target),by.x='target',by.y='interpro')[,c('source','Class')],c('interpro','Class'))
+
+nrow(overlap_classes)
 
 all_classes = get_classes(unique(c(interpro_raw_go$interpro,interpro_manual_mappings$interpro)))
 
+nrow(all_classes)
+
 all_classes = rbind(all_classes[! is.na(all_classes$Class),],overlap_classes)
+
+nrow(all_classes)
 
 final_classes = expand_classes(all_classes)
 

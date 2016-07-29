@@ -3,12 +3,12 @@ GO:0003700	Skipped
 GO:0003713	Skipped
 GO:0008140	Skipped
 GO:0003824	Skipped
-GO:0004866	Inhibitor / Cleavage
-GO:0030414	Inhibitor / Cleavage
-GO:0004867	Inhibitor / Cleavage
-GO:0004869	Inhibitor / Cleavage
-GO:0004857	Inhibitor / Cleavage
-GO:0005096	Inhibitor / Cleavage
+GO:0004866	Cleavage / Inhibitor
+GO:0030414	Cleavage / Inhibitor
+GO:0004867	Cleavage / Inhibitor
+GO:0004869	Cleavage / Inhibitor
+GO:0004857	Cleavage / Inhibitor
+GO:0005096	Cleavage / Inhibitor
 GO:0005044	Binding
 GO:0005085	Skipped
 GO:0005089	Skipped

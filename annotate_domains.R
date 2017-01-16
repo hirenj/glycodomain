@@ -100,7 +100,7 @@ expand_classes = function(classes,groups) {
     defined_classes = child_classes[!is.na(child_classes$Class),]
     undefined_classes = child_classes[is.na(child_classes$Class),]
     rbind(df,defined_classes,expand.grid(interpro=undefined_classes$interpro,Class=df$Class))
-  },.progress='text')
+  })
 }
 
 all_groups = group_interpros(interpro_raw_relations)
@@ -131,5 +131,5 @@ nrow(final_classes)
 
 # Export final_classes to a file that we upload somewhere.
 
-write.table(unique(final_classes[final_classes$Class != 'Skipped',]),file=paste('Glycodomain','Interpro',interpro_release,'class.tsv',sep='-'),row.names=F,col.names=T,quote=F,sep='\t')
+write.table(unique(final_classes[final_classes$Class != 'Skipped',]),file=paste('Glycodomain','InterPro',interpro_release,'class.tsv',sep='-'),row.names=F,col.names=T,quote=F,sep='\t')
 

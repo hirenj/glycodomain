@@ -10,9 +10,10 @@ after_success:
 before_deploy:
 - export RELEASE_FILES=$(ls Glycodomain-*.tsv)
 - echo "Deploying $RELEASE_FILES"
-- pip install awscli
+- pip install --user awscli
+- export PATH=$PATH:$HOME/.local/bin
 after_deploy:
-- interpro=$(ls -1 Glycodomain-*[0-9]*.tsv | sed -e 's/-class\.tsv//' -e 's/.*Interpro-//'); for aws s3api put-object --bucket node-lambda --key 'glycodomain/Glycodomain-latest-Interpro-latest-class.tsv' --metadata "version=$TRAVIS_TAG" --metadata "interpro=$interpro"
+- interpro=$(ls -1 Glycodomain-*[0-9]*.tsv | sed -e 's/-class\.tsv//' -e 's/.*Interpro-//'); aws s3api put-object --bucket node-lambda --key 'glycodomain/Glycodomain-latest-InterPro-latest-class.tsv' --metadata "version=${TRAVIS_TAG},interpro=${interpro}"
 deploy:
   provider: s3
   local-dir: dist

@@ -14,6 +14,7 @@ before_deploy:
 - export PATH=$PATH:$HOME/.local/bin
 after_deploy:
 - interpro=$(ls -1 Glycodomain-*[0-9]*.tsv | sed -e 's/-class\.tsv//' -e 's/.*InterPro-//' | head -1); aws s3 cp --metadata "version=${TRAVIS_TAG},interpro=${interpro}" dist/Glycodomain-latest-InterPro-latest-class.tsv 's3://node-lambda/glycodomain/Glycodomain-latest-InterPro-latest-class.tsv'
+- interpro=$(ls -1 Glycodomain-*[0-9]*.tsv | sed -e 's/-class\.tsv//' -e 's/.*InterPro-//' | head -1); aws s3 cp --metadata "version=${TRAVIS_TAG},interpro=${interpro}" "dist/Glycodomain-latest-InterPro-${interpro}-class.tsv" "s3://node-lambda/glycodomain/Glycodomain-latest-InterPro-${interpro}-class.tsv"
 deploy:
   provider: s3
   local-dir: dist

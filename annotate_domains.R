@@ -100,7 +100,7 @@ expand_classes = function(classes,groups) {
     defined_classes = child_classes[!is.na(child_classes$Class),]
     undefined_classes = child_classes[is.na(child_classes$Class),]
     rbind(df,defined_classes,expand.grid(interpro=undefined_classes$interpro,Class=df$Class))
-  })
+  },.progress="none")
 }
 
 all_groups = group_interpros(interpro_raw_relations)

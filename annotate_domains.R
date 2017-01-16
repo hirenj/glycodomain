@@ -125,7 +125,7 @@ all_classes = rbind(all_classes[! is.na(all_classes$Class),],overlap_classes)
 
 nrow(all_classes)
 
-final_classes = expand_classes(all_classes)
+final_classes = suppressMessages(expand_classes(all_classes))
 
 nrow(final_classes)
 

@@ -2,8 +2,8 @@ language: r
 cache: packages
 warnings_are_errors: false
 r_check_arg: --no-manual
-before_install:
-- Rscript -e 'update.packages(ask=FALSE)'
+repos:
+  CRAN: https://cloud.r-project.org
 script: R CMD BATCH annotate_domains.R && cat annotate_domains.Rout && wc -l $(ls -1 Glycodomain-*[0-9]*.tsv)
 after_success:
 - test ! -z ${TRAVIS_TAG} && curr=$(ls -1 Glycodomain-*[0-9]*.tsv) && cp $curr "Glycodomain-${TRAVIS_TAG}${curr#Glycodomain}"
